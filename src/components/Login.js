@@ -16,6 +16,12 @@ function Login() {
   return (
     <div>
         <p>Log in</p>
+        <label for='username'>Username</label>
+          <input type="text" id="username" name="username" placeholder='Username'/>
+        <br/>
+        <label for='password'>Password:</label>
+          <input type='password' name='password' placeholder='Password'/>
+          <br/>
         <button onClick={() => sendToFeed()} >Log in</button>
         <br></br>
         <p>Don't have an account?</p>

@@ -1,4 +1,3 @@
-import './App.css';
 import Login from './components/Login';
 import { Route } from 'react-router-dom'
 import Feed from './components/Feed';
