@@ -1,10 +1,11 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import NavBar from './NavBar'
 import {Route, Switch} from 'react-router-dom'
 import Explore from './Explore'
 import UserProfile from './UserProfile'
 
 function Feed() {
+
   return (
     <div>
         <NavBar />
