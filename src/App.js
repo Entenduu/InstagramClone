@@ -11,12 +11,17 @@ function App() {
       <Route exact path="/" >
         <Login />
       </Route>
-      <Route path="/feed" >
-        <Feed />
-      </Route>
+
       <Route path="/signup" >
         <SignUp />
       </Route>
+
+
+      <Route path="/feed" >
+        <Feed />
+      </Route>
+
+
     </div>
   );
 }
