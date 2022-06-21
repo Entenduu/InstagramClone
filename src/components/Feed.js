@@ -13,6 +13,7 @@ function Feed() {
     .then(SetPostsData)
   }, [])
 
+
   const allPosts = postsData.map(post => {
     return <PostCard key={post.id} post={post}/>
   })

@@ -1,11 +1,19 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card'
 
 function PostCard({post}) {
   return (
-    <div className="post-card" >
-      <img className="post-image" src={post.image} alt={post.caption}></img>
-      <p>{post.username}</p>
-      <p>{post.caption}</p>
+
+    <div>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={post.image}/>
+      <Card.Body>
+      <Card.Subtitle>{post.username}</Card.Subtitle>
+        <Card.Text>
+          {post.caption}
+        </Card.Text>
+      </Card.Body>
+        </Card>
     </div>
   )
 }
