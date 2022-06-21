@@ -5,15 +5,19 @@ function PostCard({post}) {
   return (
 
     <div>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={post.image}/>
-      <Card.Body>
-      <Card.Subtitle>{post.username}</Card.Subtitle>
-        <Card.Text>
-          {post.caption}
-        </Card.Text>
-      </Card.Body>
-        </Card>
+      <br/>
+      <br/>
+      <div class='card-container'>
+      <Card style={{ width: '28rem' }}>
+        <Card.Img variant="top" src={post.image}/>
+        <Card.Body>
+        <Card.Subtitle>{post.username}</Card.Subtitle>
+          <Card.Text>
+            {post.caption}
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </div>
     </div>
   )
 }

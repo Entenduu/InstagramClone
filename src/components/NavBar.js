@@ -1,15 +1,27 @@
 import React from 'react'
 import {NavLink, Link} from 'react-router-dom'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+
 
 function NavBar() {
   return (
     <div>
-      <img src='./images/logo.png' alt='instagram logo'/>
-        <NavLink to="/feed/explore" >Explore</NavLink>
-        <NavLink to="/feed/profile" >Profile</NavLink>
-        <Link exact to="/" >Log Out</Link>
+      <Navbar bg="light" variant="light" >
+    
+    <Navbar.Brand href="/feed">
+    <img src='./images/logo.png' alt='instagram logo'/>
+    </Navbar.Brand>
+    <Nav className="me-auto">
+        <Nav.Link href="/feed/explore" >Explore</Nav.Link>
+        <Nav.Link href="/feed/profile" >Profile</Nav.Link>
+        <Nav.Link exact href="/" >Log Out</Nav.Link>
+    </Nav>
+  
+  </Navbar>
     </div>
   )
 }
 
 export default NavBar
+
