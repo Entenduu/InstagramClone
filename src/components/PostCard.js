@@ -1,8 +1,12 @@
 import React from 'react'
 
-function PostCard() {
+function PostCard({post}) {
   return (
-    <div>PostCard</div>
+    <div>
+      <img src={post.image} alt={post.caption}></img>
+      <p>{post.username}</p>
+      <p>{post.caption}</p>
+    </div>
   )
 }
 

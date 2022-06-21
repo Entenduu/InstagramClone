@@ -1,6 +1,12 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 function SignUp() {
+  const history = useHistory()
+  
+  function sendToFeed() {
+    history.push('/feed')
+}
   return (
     <div className='sign-up-form'>
       <h1>Sign Up!</h1>
@@ -14,6 +20,7 @@ function SignUp() {
         <label for='password'>Password:</label>
           <input type='password' name='password' placeholder='Password'/>
           <br/>
+          <button onClick={() => sendToFeed()}>submit</button>
       </form>
 
     </div>
