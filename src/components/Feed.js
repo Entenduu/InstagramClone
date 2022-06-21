@@ -26,7 +26,7 @@ function Feed() {
                 <Explore />
             </Route>
             <Route path="/feed/profile">
-                <UserProfile />
+                <UserProfile postsData={postsData} />
             </Route>
         </Switch>
         {allPosts}

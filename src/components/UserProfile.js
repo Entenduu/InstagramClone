@@ -1,8 +1,11 @@
 import React from 'react'
+import PostCard from './PostCard'
 
-function UserProfile() {
+function UserProfile({postsData}) {
+
   return (
-    <div>Your Profile</div>
+    <div>user profile
+    </div>
   )
 }
 
