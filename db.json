@@ -4,13 +4,13 @@
         "id" : "1",
         "username" : "griffin",
         "caption" : "a caption",
-        "image" : "image URL"
+        "image" : "https://www.marinelifeofmumbai.in/wp-content/uploads/2017/09/47.jpg"
     },
     {
         "id" : "2",
         "username" : "cris",
         "caption" : "a different caption",
-        "image" : "another image URL"
+        "image" : "https://exploringrworld.com/wp-content/uploads/2014/09/Paris-2-272.jpg"
     }
   ]
 }

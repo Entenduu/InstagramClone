@@ -11,7 +11,7 @@ function Feed() {
     fetch('http://localhost:3001/data')
     .then(resp => resp.json())
     .then(SetPostsData)
-  })
+  }, [])
 
   const allPosts = postsData.map(post => {
     return <PostCard key={post.id} post={post}/>
