@@ -9,9 +9,17 @@ function Login() {
         history.push('/feed')
     }
 
+    function sendToSignUp() {
+        history.push('/signup')
+    }
+
   return (
-    <div>Login
+    <div>
+        <p>Log in</p>
         <button onClick={() => sendToFeed()} >Log in</button>
+        <br></br>
+        <p>Don't have an account?</p>
+        <button onClick={() => sendToSignUp()} >Sign Up!</button>
     </div>
   )
 }
