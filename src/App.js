@@ -4,6 +4,8 @@ import Feed from './components/Feed';
 import SignUp from './components/SignUp';
 
 function App() {
+
+
   return (
     <div className="App">
       <Route exact path="/" >

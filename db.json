@@ -1,4 +1,5 @@
-[
+{
+  "data":[
     {
         "id" : "1",
         "username" : "griffin",
@@ -11,4 +12,5 @@
         "caption" : "a different caption",
         "image" : "another image URL"
     }
-]
+  ]
+}
