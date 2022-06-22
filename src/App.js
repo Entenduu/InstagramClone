@@ -54,6 +54,10 @@ function App() {
 
   }
 
+  function handleSignup(){
+    history.push("/signup")
+  }
+
   const handleLogout = () => {
     setUser({ name: "", email: "", password: ""})
   }
@@ -61,7 +65,7 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/" >
-        <Login handleLogin={handleLogin} error={error} />
+        <Login handleLogin={handleLogin} error={error} onSignup={handleSignup}/>
       </Route>
 
       <Route path="/signup" >
