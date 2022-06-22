@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 
 function NavBar( { onLogout }) {
   return (
-    <div>
+    <div className='nav-bar' >
       <Navbar bg="light" variant="light" >
     
     <Navbar.Brand href="/feed">

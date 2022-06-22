@@ -11,7 +11,7 @@ function Feed({user, postsData}) {
 
 
 
-
+console.log(user)
   
   
   return (
