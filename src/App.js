@@ -9,9 +9,9 @@ function App() {
     email: "admin@admin.com",
     password: "admin123"
   }
-  
+
   const [postsData, SetPostsData] = useState([]);
-  const [user, setUser] = useState({name: "", email: ""})
+  const [user, setUser] = useState({"name": "", "email": "", "password": ""})
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
@@ -26,24 +26,25 @@ function App() {
     .then(resp => resp.json())
     .then(setUserData)
   },[])
+  console.log(userData)
 
   const handleLogin = details => {
+    setUser({
+      "name": details.name,
+      "email": details.email,
+      "password": details.password
+    });
+    console.log(user)
 
-    if (details.email === adminUser.email && details.password === adminUser.password){
+    if (userData.includes(user)){
       console.log('logged in')
-
-      setUser({
-        name: details.name,
-        email: details.email
-      });
-      console.log(user)
     }else{
       setError("Error: Incorrect Details")
     }
   }
 
   const handleLogout = () => {
-    setUser({ name: "", email: ""})
+    setUser({ name: "", email: "", password: ""})
   }
 
   return (
