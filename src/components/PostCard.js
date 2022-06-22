@@ -18,7 +18,7 @@ function PostCard({post}) {
         <Card.Img variant="top" src={post.image}/>
         <Card.Body>
           <div>
-        <Card.Subtitle >x likes</Card.Subtitle>
+        <Card.Subtitle >{post.likes} likes</Card.Subtitle>
           <Card.Text>
             <b>{post.username}</b>  {post.caption}
           </Card.Text>
