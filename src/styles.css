@@ -119,3 +119,9 @@ img#logo{
     padding-left: 20px;
     padding-top: 10px;
 }
+
+div.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
