@@ -14,7 +14,7 @@ function App() {
   const history = useHistory()
 
   const [postsData, SetPostsData] = useState([]);
-  const [user, setUser] = useState({"name": "", "email": "", "password": ""})
+  const [user, setUser] = useState({"name": "", "password": ""})
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
@@ -41,7 +41,6 @@ function App() {
         login = true
         setUser({
           "name": details.name,
-          "email": details.email,
           "password": details.password
         })
         history.push("/feed")  
