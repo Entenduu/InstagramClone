@@ -100,3 +100,17 @@ form .form-inner input[type="submit"]:hover {
     background-color: beige;
 }
 
+form button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #FE4880;
+}

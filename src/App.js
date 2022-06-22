@@ -9,6 +9,7 @@ function App() {
     email: "admin@admin.com",
     password: "admin123"
   }
+  
   const [postsData, SetPostsData] = useState([]);
   const [user, setUser] = useState({name: "", email: ""})
   const [error, setError] = useState("")
@@ -26,11 +27,7 @@ function App() {
     .then(setUserData)
   },[])
 
-console.log(userData, 'hello')
-
   const handleLogin = details => {
-    console.log(details)
-
 
     if (details.email === adminUser.email && details.password === adminUser.password){
       console.log('logged in')
@@ -56,7 +53,7 @@ console.log(userData, 'hello')
       </Route>
 
       <Route path="/signup" >
-        <SignUp />
+        <SignUp handleLogin={handleLogin} />
       </Route>
 
 

@@ -26,7 +26,7 @@ function Login({ handleLogin, error}) {
         <form onSubmit={submitHandler}>
           <div className='form-inner'>
             <h2>Login</h2>
-            {(error != "") ? (<div className='error'>{error}</div>) : ""}
+            {(error !== "") ? (<div className='error'>{error}</div>) : ""}
             <div className='form-group'>
               <label htmlFor="name">Name:</label>
               <input type="text" name="name" id='name' placeholder='Username' onChange={e => setDetails({...details, name: e.target.value})} value={details.name}/>
@@ -40,6 +40,8 @@ function Login({ handleLogin, error}) {
               <input type="password" name="password" id='password' placeholder='Password' onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
             </div>
             <input type="submit" value="LOG IN" />
+            <br></br>
+            <button className='button' onClick={() => sendToSignUp()}>No account? No Problem, Register here!</button>
           </div>
         </form>
     </div>
