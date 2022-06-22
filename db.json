@@ -53,19 +53,19 @@
 
   "users" : [
     {
+      "id" : "0",
       "name" : "griffin",
-      "email" : "admin@admin.com",
       "password" : "admin123"
     },
     {
+      "id" : "1",
       "name" : "cris",
-      "email" : "admin@admin.com",
-      "password" : "admin123"
+      "password" : "cashmoney"
     },
     {
+      "id" : "2",
       "name" : "bop",
-      "email" : "admin@admin.com",
-      "password" : "admin123"
+      "password" : "password"
     }
   ]
 }

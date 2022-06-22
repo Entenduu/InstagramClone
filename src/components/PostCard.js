@@ -8,7 +8,7 @@ function PostCard({post}) {
     <div>
       <br/>
       <br/>
-      <div class='card-container'>
+      <div className='card-container'>
 
       <Card style={{ width: '28rem' }}>
       <Card.Header>
