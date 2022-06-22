@@ -17,11 +17,11 @@ function App() {
     console.log(details)
 
     if (details.email == adminUser.email && details.password == adminUser.password){
-      console.log('logged in')
       setUser({
         name: details.name,
         email: details.email
       });
+      console.log(user)
     }else{
       setError("Error: Incorrect Details")
     }

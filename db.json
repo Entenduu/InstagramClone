@@ -49,6 +49,24 @@
       "comments" : {}
     }
     
+  ],
+
+  "users" : [
+    {
+      "name" : "griffin",
+      "email" : "admin@admin.com",
+      "password" : "admin123"
+    },
+    {
+      "name" : "cris",
+      "email" : "admin@admin.com",
+      "password" : "admin123"
+    },
+    {
+      "name" : "bop",
+      "email" : "admin@admin.com",
+      "password" : "admin123"
+    }
   ]
 }
 
