@@ -26,7 +26,6 @@ function App() {
     .then(resp => resp.json())
     .then(setUserData)
   },[])
-  
 
   const handleLogin = details => {
 
@@ -46,7 +45,6 @@ function App() {
     })
 
     if(!login){
-
       setError("Error: Incorrect Details")
     }
 

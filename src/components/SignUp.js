@@ -8,8 +8,12 @@ function SignUp({handleLogin}) {
 
   const submitHandler = e => {
     e.preventDefault();
-
-    handleLogin(newUserDetails)
+    fetch('http://localhost:3001/users',
+    {method: "POST",
+    headers: {"ContentType":"application/json"},
+    body:JSON.stringify(newUserDetails)})
+    .then(res=>res.json())
+    .then(data=>handleLogin(data))
   }
   
   function sendToFeed() {
@@ -23,7 +27,16 @@ function SignUp({handleLogin}) {
             <h2>Sign Up</h2>
             <div className='form-group'>
               <label htmlFor="name">Choose a username:</label>
-              <input type="text" name="name" id='name' placeholder='Username' onChange={e => setNewUserDetails({...newUserDetails, name: e.target.value})} value={newUserDetails.name}/>
+              <input
+              type="text"
+              name="name"
+              id='name'
+              placeholder='Username'
+              onChange={e => setNewUserDetails({...newUserDetails, name: e.target.value})} value={newUserDetails.name}/>
+            </div>
+            <div className='form-group'>
+              <label htmlFor="email">Enter your email:</label>
+              <input type="email" name="email" id='email' placeholder='Email' onChange={e => setNewUserDetails({...newUserDetails, email: e.target.value})} value={newUserDetails.email}/>
             </div>
             <div className='form-group'>
               <label htmlFor="password">Enter a password:</label>
