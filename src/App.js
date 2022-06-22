@@ -59,7 +59,7 @@ function App() {
   }
 
   const handleLogout = () => {
-    setUser({ name: "", email: "", password: ""})
+    setUser({ name: "",  password: ""})
   }
 
   return (
