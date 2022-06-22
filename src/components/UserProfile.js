@@ -1,13 +1,13 @@
 import React from 'react'
 import PostCard from './PostCard'
 
+
 function UserProfile({postsData, user}) {
   const userPosts = postsData.map(post => {
     console.log(user.name)
     if(post.username === user.name){
-  
       return <PostCard key={post.id} post={post}/>
-    } else {
+    }else {
       return null
     }
   })

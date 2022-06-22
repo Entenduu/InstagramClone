@@ -4,6 +4,8 @@ import {Route, Switch} from 'react-router-dom'
 import Liked from './Liked'
 import UserProfile from './UserProfile'
 import AllPosts from './AllPosts'
+
+
 function Feed({user, postsData}) {
   
 

@@ -4,6 +4,7 @@ import Feed from './components/Feed';
 import SignUp from './components/SignUp';
 import {React, useState, useEffect} from 'react';
 import { useHistory } from "react-router-dom"
+import NavBar from './components/NavBar';
 
 function App() {
   const adminUser = {
@@ -62,7 +63,9 @@ function App() {
   }
 
   return (
+    
     <div className="App">
+
       <Route exact path="/" >
         <Login handleLogin={handleLogin} error={error} onSignup={handleSignup}/>
       </Route>
@@ -76,7 +79,7 @@ function App() {
         <Feed user={user} postsData={postsData} handleLogout={handleLogout} />
       </Route>
 
-
+     
     </div>
   );
 }

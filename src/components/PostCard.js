@@ -21,6 +21,8 @@ function PostCard({post}) {
         <Card.Subtitle >{post.likes} likes</Card.Subtitle>
           <Card.Text>
             <b>{post.username}</b>  {post.caption}
+            <br/>
+            {}
           </Card.Text>
           </div>
         </Card.Body>
