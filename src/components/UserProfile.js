@@ -3,9 +3,11 @@ import PostCard from './PostCard'
 
 
 function UserProfile({postsData, user}) {
+
+
   const userPosts = postsData.map(post => {
-    console.log(user.name)
-    if(post.username === user.name){
+    
+    if(post.username === user.currentUsername){
       return <PostCard key={post.id} post={post}/>
     }else {
       return null

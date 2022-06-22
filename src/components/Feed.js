@@ -8,11 +8,6 @@ import AllPosts from './AllPosts'
 
 function Feed({user, postsData}) {
   
-
-
-
-console.log(user)
-  
   
   return (
     <div>
