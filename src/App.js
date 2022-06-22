@@ -14,7 +14,7 @@ function App() {
   const history = useHistory()
 
   const [postsData, SetPostsData] = useState([]);
-  const [user, setUser] = useState({"name": "", "password": ""})
+  const [user, setUser] = useState(0)
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
@@ -39,11 +39,13 @@ function App() {
       if(temp.password === details.password && temp.name === details.name){
         console.log('logged in!')
         login = true
-        setUser({
-          "name": details.name,
-          "password": details.password
-        })
-        history.push("/feed")  
+        setUser(temp.id)
+        fetch(`http://localhost:3001/currentUser`,
+        {method: 'PATCH',
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify(temp.id)})
+        .then( history.push("/feed"))
+         
       }
     })
 
@@ -58,7 +60,7 @@ function App() {
   }
 
   const handleLogout = () => {
-    setUser({ name: "", password: ""})
+    setUser(0)
   }
 
   return (

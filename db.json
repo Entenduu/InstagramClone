@@ -7,7 +7,7 @@
       "image": "./images/users/raphael/1.jpg",
       "profilePic": "./images/avatars/griffin.jpg",
       "comments": {},
-      "likes" : 0
+      "likes" : []
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "image": "./images/users/raphael/2.jpg",
       "profilePic": "./images/avatars/cris.jpg",
       "comments": {},
-      "likes" : 0
+      "likes" : []
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "image": "/images/users/raphael/3.jpg",
       "profilePic": "./images/avatars/cris.jpg",
       "comments": {},
-      "likes" : 0
+      "likes" : []
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "image": "/images/users/raphael/4.jpg",
       "profilePic": "./images/avatars/griffin.jpg",
       "comments": {},
-      "likes" : 0
+      "likes" : []
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "image": "./images/users/raphael/5.jpg",
       "profilePic": "./images/avatars/woman1.jpg",
       "comments": {},
-      "likes" : 0
+      "likes" : []
     },
     {
       "id": 6,
@@ -52,39 +52,35 @@
       "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
       "profilePic": "./images/avatars/steve.jpg",
       "comments": {},
-      "likes" : 0
+      "likes" : []
     }
   ],
   "users": [
     {
-      "id": 0,
-      "name": "griffin",
-      "password": "admin123",
-      "likedPosts": []
-    },
-    {
       "id": 1,
-      "name": "cris",
-      "password": "cashmoney",
-      "likedPosts": []
+      "name": "griffin",
+      "password": "admin123"
     },
     {
       "id": 2,
-      "name": "bop",
-      "password": "password",
-      "likedPosts": []
+      "name": "cris",
+      "password": "cashmoney"
     },
     {
       "id": 3,
-      "name": "tiger",
-      "password": "dog",
-      "likedPosts": []
+      "name": "bop",
+      "password": "password"
     },
     {
       "id": 4,
       "name": "tiger",
-      "password": "dog",
-      "likedPosts": []
+      "password": "dog"
+    },
+    {
+      "id": 5,
+      "name": "tiger",
+      "password": "dog"
     }
-  ]
+  ],
+  "currentUser": {}
 }
