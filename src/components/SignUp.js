@@ -14,7 +14,8 @@ function SignUp({handleLogin}) {
   
   function sendToFeed() {
     history.push('/feed')
-}
+  }
+
   return (
     <div className='sign-up-form'>
 
