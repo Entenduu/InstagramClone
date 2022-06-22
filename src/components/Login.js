@@ -22,7 +22,7 @@ function Login({ handleLogin, error, onSignup}) {
 
   return (
     <div>
-        <form onSubmit={submitHandler}>
+        <form className='info' onSubmit={submitHandler}>
           <div className='form-inner'>
             <h2>Login</h2>
             {(error !== "") ? (<div className='error'>{error}</div>) : ""}

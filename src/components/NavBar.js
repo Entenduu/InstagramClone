@@ -15,7 +15,10 @@ function NavBar( { onLogout }) {
     <Nav className="me-auto">
         <Nav.Link href="/feed/profile" >Profile</Nav.Link>
         <Nav.Link href="/feed/liked" >Liked Photos</Nav.Link>
+        <Nav.Link href="/feed/makeapost" >Make a Post</Nav.Link>
         <Nav.Link onClick={onLogout} exact='true' href='/' >Log Out</Nav.Link>
+        
+        
     </Nav>
   
   </Navbar>

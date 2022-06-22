@@ -43,7 +43,12 @@
       "image": "./images/users/raphael/5.jpg",
       "profilePic": "./images/avatars/user1.jpg",
       "comments": {},
+<<<<<<< HEAD
       "likes": []
+=======
+      "likes" : []
+
+>>>>>>> dcc490bd1786cdb38ae357a00acc3d6ee2788df2
     },
     {
       "id": 6,
@@ -107,6 +112,16 @@
       "id": 5,
       "name": "tiger",
       "password": "dog"
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 7
     }
   ],
   "currentUser": {
