@@ -58,7 +58,7 @@ function App() {
   }
 
   const handleLogout = () => {
-    setUser({ name: "",  password: ""})
+    setUser({ name: "", password: ""})
   }
 
   return (
@@ -73,7 +73,7 @@ function App() {
 
 
       <Route path="/feed" >
-        <Feed user={user} postsData={postsData} />
+        <Feed user={user} postsData={postsData} handleLogout={handleLogout} />
       </Route>
 
 

@@ -24,9 +24,10 @@ function SignUp({handleLogin}) {
     [name]: value})
   }
   
-//   function sendToFeed() {
-//     history.push('/feed')
-// }
+  // function sendToFeed() {
+  //   history.push('/feed')
+  // }
+
   return (
     <div className='sign-up-form'>
 

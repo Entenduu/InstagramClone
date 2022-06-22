@@ -3,22 +3,18 @@ import NavBar from './NavBar'
 import {Route, Switch} from 'react-router-dom'
 import Liked from './Liked'
 import UserProfile from './UserProfile'
-import PostCard from './PostCard'
-
+import AllPosts from './AllPosts'
 function Feed({user, postsData}) {
   
 
 
 
 
-  const allPosts = postsData.map(post => {
-    return <PostCard key={post.id} post={post}/>
-  })
+  
   
   return (
     <div>
-        <NavBar />
-        
+        <NavBar /> 
         <Switch>
             <Route path="/feed/liked" >
                 <Liked />
@@ -26,8 +22,8 @@ function Feed({user, postsData}) {
             <Route path="/feed/profile">
                 <UserProfile postsData={postsData} user={user}/>
             </Route>
+            <AllPosts postsData={postsData}/>
         </Switch>
-        {allPosts}
     </div>
   )
 }
