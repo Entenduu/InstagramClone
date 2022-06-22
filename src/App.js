@@ -2,14 +2,39 @@ import Login from './components/Login';
 import { Route } from 'react-router-dom'
 import Feed from './components/Feed';
 import SignUp from './components/SignUp';
+import {React, useState} from 'react';
 
 function App() {
+  const adminUser = {
+    email: "admin@admin.com",
+    password: "admin123"
+  }
 
+  const [user, setUser] = useState({name: "", email: ""})
+  const [error, setError] = useState("")
+
+  const handleLogin = details => {
+    console.log(details)
+
+    if (details.email == adminUser.email && details.password == adminUser.password){
+      console.log('logged in')
+      setUser({
+        name: details.name,
+        email: details.email
+      });
+    }else{
+      setError("Error: Incorrect Details")
+    }
+  }
+
+  const handleLogout = () => {
+    setUser({ name: "", email: ""})
+  }
 
   return (
     <div className="App">
       <Route exact path="/" >
-        <Login />
+        <Login handleLogin={handleLogin} error={error} />
       </Route>
 
       <Route path="/signup" >
@@ -18,7 +43,7 @@ function App() {
 
 
       <Route path="/feed" >
-        <Feed />
+        <Feed user={user} />
       </Route>
 
 

@@ -5,6 +5,7 @@ function UserProfile({postsData}) {
 
   return (
     <div>user profile
+      <button>New Post</button>
     </div>
   )
 }
