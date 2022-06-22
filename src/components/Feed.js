@@ -5,15 +5,10 @@ import Liked from './Liked'
 import UserProfile from './UserProfile'
 import PostCard from './PostCard'
 
-function Feed({user}) {
-  const [postsData, SetPostsData]=useState([]);
-  useEffect(()=>{
-    fetch('http://localhost:3001/data')
-    .then(resp => resp.json())
-    .then(SetPostsData)
-  }, [])
+function Feed({user, postsData}) {
+  
 
-  console.log(user)
+
 
 
   const allPosts = postsData.map(post => {

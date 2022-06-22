@@ -2,26 +2,44 @@ import Login from './components/Login';
 import { Route } from 'react-router-dom'
 import Feed from './components/Feed';
 import SignUp from './components/SignUp';
-import {React, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 
 function App() {
   const adminUser = {
     email: "admin@admin.com",
     password: "admin123"
   }
-
+  const [postsData, SetPostsData] = useState([]);
   const [user, setUser] = useState({name: "", email: ""})
   const [error, setError] = useState("")
+  const [userData, setUserData] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:3001/data')
+    .then(resp => resp.json())
+    .then(SetPostsData)
+  }, [])
+
+  useEffect(()=>{
+    fetch('http://localhost:3001/users')
+    .then(resp => resp.json())
+    .then(setUserData)
+  },[])
+
+console.log(userData, 'hello')
 
   const handleLogin = details => {
     console.log(details)
 
+
     if (details.email === adminUser.email && details.password === adminUser.password){
       console.log('logged in')
+
       setUser({
         name: details.name,
         email: details.email
       });
+      console.log(user)
     }else{
       setError("Error: Incorrect Details")
     }
@@ -43,7 +61,7 @@ function App() {
 
 
       <Route path="/feed" >
-        <Feed user={user} />
+        <Feed user={user} postsData={postsData} />
       </Route>
 
 

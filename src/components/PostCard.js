@@ -12,7 +12,7 @@ function PostCard({post}) {
 
       <Card style={{ width: '28rem' }}>
       <Card.Header>
-        <img src={post.profilePic} alt='pfp' className='img-fluid rounded-circle float-left' style={{ width: '2em', height: '2em', marginRight:'1em'}}></img>
+        <Image src={post.profilePic} alt='pfp' className='img-fluid rounded-circle float-left' style={{ width: '2em', height: '2em', marginRight:'1em'}}></Image>
         <b>{post.username}</b>
         </Card.Header>
         <Card.Img variant="top" src={post.image}/>
