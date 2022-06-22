@@ -2,7 +2,7 @@ import {React, useState} from 'react'
 
 function Login({ handleLogin, error, onSignup}) {
 
-    const [details, setDetails] = useState({name: "", email: "", password: ""})
+    const [details, setDetails] = useState({name: "", password: ""})
 
     const submitHandler = e => {
       e.preventDefault();

@@ -4,11 +4,7 @@ import {React, useState} from 'react'
 function SignUp({handleLogin}) {
   // const history = useHistory()
 
-<<<<<<< HEAD
-  const [newUserDetails, setNewUserDetails] = useState({name: "", password: ""})
-=======
   const [newUser, setNewUser] = useState({name: "", password: ""})
->>>>>>> 020faecbb15e84ee66100e8bed85882228a8633f
 
   const submitHandler = e => {
     e.preventDefault();
