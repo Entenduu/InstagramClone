@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 
-function NavBar() {
+function NavBar( { onLogout }) {
   return (
     <div>
       <Navbar bg="light" variant="light" >
@@ -15,7 +15,7 @@ function NavBar() {
     <Nav className="me-auto">
         <Nav.Link href="/feed/profile" >Profile</Nav.Link>
         <Nav.Link href="/feed/liked" >Liked Photos</Nav.Link>
-        <Nav.Link exact href="/" >Log Out</Nav.Link>
+        <Nav.Link onClick={onLogout} exact href="/" >Log Out</Nav.Link>
     </Nav>
   
   </Navbar>
