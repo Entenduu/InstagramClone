@@ -53,6 +53,33 @@
       "profilePic": "./images/avatars/steve.jpg",
       "comments": {},
       "likes" : 0
+    },
+    {
+      "id": 7,
+      "username": "Edgar",
+      "caption": "Wow",
+      "image": "https://vagabundler.com/wp-content/uploads/2019/06/P3160164-Copy.jpg",
+      "profilePic": "./images/avatars/user2.jpg",
+      "comments": {},
+      "likes" : 0
+    },
+    {
+      "id": 8,
+      "username": "Amy",
+      "caption": "Really makes you think...",
+      "image": "https://ae01.alicdn.com/kf/HTB17XIuNpXXXXc8XpXXq6xXFXXXl/Jingdezhen-Traditional-Chiese-Ceramic-Vase-Water-Point-Peach-Flower-Pottery-Porcelain-Vase-Tabletop-Vase-Home-Decor.jpg",
+      "profilePic": "./images/avatars/user3.jpg",
+      "comments": {},
+      "likes" : 0
+    },
+    {
+      "id": 9,
+      "username": "Thomas",
+      "caption": "Never give up",
+      "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
+      "profilePic": "./images/avatars/user4.jpg",
+      "comments": {},
+      "likes" : 0
     }
   ],
   "users": [
