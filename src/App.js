@@ -14,7 +14,6 @@ function App() {
   const [error, setError] = useState("")
 
   const handleLogin = details => {
-    console.log(details)
 
     if (details.email == adminUser.email && details.password == adminUser.password){
       setUser({
@@ -38,7 +37,7 @@ function App() {
       </Route>
 
       <Route path="/signup" >
-        <SignUp />
+        <SignUp handleLogin={handleLogin} />
       </Route>
 
 

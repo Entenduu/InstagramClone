@@ -40,6 +40,8 @@ function Login({ handleLogin, error}) {
               <input type="password" name="password" id='password' placeholder='Password' onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
             </div>
             <input type="submit" value="LOG IN" />
+            <br></br>
+            <button className='button' onClick={() => sendToSignUp()}>No account? No Problem, Register here!</button>
           </div>
         </form>
     </div>
