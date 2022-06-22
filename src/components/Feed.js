@@ -14,16 +14,17 @@ function Feed({user, postsData}) {
   const allPosts = postsData.map(post => {
     return <PostCard key={post.id} post={post}/>
   })
-
+  
   return (
     <div>
         <NavBar />
+        
         <Switch>
             <Route path="/feed/liked" >
                 <Liked />
             </Route>
             <Route path="/feed/profile">
-                <UserProfile postsData={postsData} />
+                <UserProfile postsData={postsData} user={user}/>
             </Route>
         </Switch>
         {allPosts}
