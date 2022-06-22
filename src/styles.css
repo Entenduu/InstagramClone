@@ -114,3 +114,8 @@ form button {
 form button:hover {
     color: #FE4880;
 }
+
+img#logo{
+    padding-left: 20px;
+    padding-top: 10px;
+}
