@@ -1,72 +1,75 @@
 {
-  "data":[
+  "data": [
     {
-        "id" : "1",
-        "username" : "griffin",
-        "caption" : "a caption",
-        "image" : "./images/users/raphael/1.jpg",
-        "profilePic" : "./images/avatars/griffin.jpg",
-        "comments" : {}
+      "id": "1",
+      "username": "griffin",
+      "caption": "a caption",
+      "image": "./images/users/raphael/1.jpg",
+      "profilePic": "./images/avatars/griffin.jpg",
+      "comments": {}
     },
     {
-        "id" : "2",
-        "username" : "cris",
-        "caption" : "a different caption",
-        "image" : "./images/users/raphael/2.jpg",
-        "profilePic" : "./images/avatars/cris.jpg",
-        "comments" : {}
+      "id": "2",
+      "username": "cris",
+      "caption": "a different caption",
+      "image": "./images/users/raphael/2.jpg",
+      "profilePic": "./images/avatars/cris.jpg",
+      "comments": {}
     },
     {
-      "id" : "3",
-      "username" : "cris",
-      "caption" : "neat",
-      "image" : "/images/users/raphael/3.jpg",
-      "profilePic" : "./images/avatars/cris.jpg",
-      "comments" : {}
+      "id": "3",
+      "username": "cris",
+      "caption": "neat",
+      "image": "/images/users/raphael/3.jpg",
+      "profilePic": "./images/avatars/cris.jpg",
+      "comments": {}
     },
     {
-      "id" : "4",
-      "username" : "griffin",
-      "caption" : "rad",
-      "image" : "/images/users/raphael/4.jpg",
-      "profilePic" : "./images/avatars/griffin.jpg",
-      "comments" : {}
+      "id": "4",
+      "username": "griffin",
+      "caption": "rad",
+      "image": "/images/users/raphael/4.jpg",
+      "profilePic": "./images/avatars/griffin.jpg",
+      "comments": {}
     },
     {
-      "id" : "5",
-      "username" : "julia",
-      "caption" : "tree hugger",
-      "image" : "./images/users/raphael/5.jpg",
-      "profilePic" : "./images/avatars/woman1.jpg",
-      "comments" : {}
+      "id": "5",
+      "username": "julia",
+      "caption": "tree hugger",
+      "image": "./images/users/raphael/5.jpg",
+      "profilePic": "./images/avatars/woman1.jpg",
+      "comments": {}
     },
     {
-      "id" : "6",
-      "username" : "US National Parks Service",
-      "caption" : "Zion National Park",
-      "image" : "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
-      "profilePic" : "./images/avatars/steve.jpg",
-      "comments" : {}
+      "id": "6",
+      "username": "US National Parks Service",
+      "caption": "Zion National Park",
+      "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
+      "profilePic": "./images/avatars/steve.jpg",
+      "comments": {}
     }
-    
   ],
-
-  "users" : [
+  "users": [
     {
-      "id" : "0",
-      "name" : "griffin",
-      "password" : "admin123"
+      "id": "0",
+      "name": "griffin",
+      "password": "admin123"
     },
     {
-      "id" : "1",
-      "name" : "cris",
-      "password" : "cashmoney"
+      "id": "1",
+      "name": "cris",
+      "password": "cashmoney"
     },
     {
-      "id" : "2",
-      "name" : "bop",
-      "password" : "password"
+      "id": "2",
+      "name": "bop",
+      "password": "password"
+    },
+    {
+      "id": "Z1FbDV7"
+    },
+    {
+      "id": "f_CERYT"
     }
   ]
 }
-
