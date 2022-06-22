@@ -1,7 +1,6 @@
 import {React, useState} from 'react'
-import { useHistory } from 'react-router-dom'
 
-function Login({ handleLogin, error}) {
+function Login({ handleLogin, error, onSignup}) {
 
     const [details, setDetails] = useState({name: "", email: "", password: ""})
 
@@ -11,15 +10,15 @@ function Login({ handleLogin, error}) {
       handleLogin(details)
     }
 
-    const history = useHistory()
+    // const history = useHistory()
 
-    function sendToFeed() {
-        history.push('/feed')
-    }
+    // function sendToFeed() {
+    //     history.push('/feed')
+    // }
 
-    function sendToSignUp() {
-        history.push('/signup')
-    }
+    // function sendToSignUp() {
+    //     history.push('/signup')
+    // }
 
   return (
     <div>
@@ -37,7 +36,7 @@ function Login({ handleLogin, error}) {
             </div>
             <input type="submit" value="LOG IN" />
             <br></br>
-            <button className='button' onClick={() => sendToSignUp()}>No account? No Problem, Register here!</button>
+            <button className='button' onClick={onSignup}>No account? No Problem, Register here!</button>
           </div>
         </form>
     </div>
