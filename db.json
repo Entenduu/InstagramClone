@@ -55,19 +55,16 @@
     {
       "id" : "0",
       "name" : "griffin",
-      "email" : "admin@admin.com",
       "password" : "admin123"
     },
     {
       "id" : "1",
       "name" : "cris",
-      "email" : "entenduu@gmail.com",
       "password" : "cashmoney"
     },
     {
       "id" : "2",
       "name" : "bop",
-      "email" : "bop@bop.com",
       "password" : "password"
     }
   ]
