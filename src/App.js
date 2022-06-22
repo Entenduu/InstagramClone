@@ -3,12 +3,15 @@ import { Route } from 'react-router-dom'
 import Feed from './components/Feed';
 import SignUp from './components/SignUp';
 import {React, useState, useEffect} from 'react';
+import { useHistory } from "react-router-dom"
 
 function App() {
   const adminUser = {
     email: "admin@admin.com",
     password: "admin123"
   }
+
+  const history = useHistory()
 
   const [postsData, SetPostsData] = useState([]);
   const [user, setUser] = useState({"name": "", "email": "", "password": ""})
@@ -40,7 +43,8 @@ function App() {
           "name": details.name,
           "email": details.email,
           "password": details.password
-        });
+        })
+        history.push("/feed")  
       }
     })
 
