@@ -13,8 +13,8 @@ function NavBar() {
     <img src='./images/logo.png' alt='instagram logo'/>
     </Navbar.Brand>
     <Nav className="me-auto">
-        <Nav.Link href="/feed/explore" >Explore</Nav.Link>
         <Nav.Link href="/feed/profile" >Profile</Nav.Link>
+        <Nav.Link href="/feed/liked" >Liked Photos</Nav.Link>
         <Nav.Link exact href="/" >Log Out</Nav.Link>
     </Nav>
   

@@ -1,7 +1,7 @@
 import {React, useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import {Route, Switch} from 'react-router-dom'
-import Explore from './Explore'
+import Liked from './Liked'
 import UserProfile from './UserProfile'
 import PostCard from './PostCard'
 
@@ -22,8 +22,8 @@ function Feed() {
     <div>
         <NavBar />
         <Switch>
-            <Route path="/feed/explore" >
-                <Explore />
+            <Route path="/feed/liked" >
+                <Liked />
             </Route>
             <Route path="/feed/profile">
                 <UserProfile postsData={postsData} />
