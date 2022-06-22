@@ -10,7 +10,7 @@ function NavBar( { onLogout }) {
       <Navbar bg="light" variant="light" >
     
     <Navbar.Brand href="/feed">
-    <img src='./images/logo.png' alt='instagram logo'/>
+    <img id='logo' src='./images/logo.png' alt='instagram logo'/>
     </Navbar.Brand>
     <Nav className="me-auto">
         <Nav.Link href="/feed/profile" >Profile</Nav.Link>
