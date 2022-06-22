@@ -53,7 +53,7 @@ function SignUp({handleLogin}) {
               <input type="password" name="password" id='password' placeholder='Password'
               onChange={handleOnChange} value={newUser.password}/>
             </div>
-            <input type="submit" value="submit"
+            <input type="submit" value="Submit"
             // onClick={() =>sendToFeed()}
             />
           </div>

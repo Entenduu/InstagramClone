@@ -4,6 +4,7 @@ import {Route, Switch} from 'react-router-dom'
 import Liked from './Liked'
 import UserProfile from './UserProfile'
 import PostCard from './PostCard'
+import MakeAPost from './MakeAPost'
 
 function Feed({user, postsData}) {
   
@@ -24,6 +25,9 @@ function Feed({user, postsData}) {
             </Route>
             <Route path="/feed/profile">
                 <UserProfile postsData={postsData} />
+            </Route>
+            <Route path="/feed/makeapost">
+                <MakeAPost />
             </Route>
         </Switch>
         {allPosts}
