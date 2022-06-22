@@ -4,16 +4,24 @@ import {React, useState} from 'react'
 function SignUp({handleLogin}) {
   // const history = useHistory()
 
-  const [newUserDetails, setNewUserDetails] = useState({name: "", email: "", password: ""})
+  const [newUser, setNewUser] = useState({name: "", password: ""})
 
   const submitHandler = e => {
     e.preventDefault();
+    console.log(newUser)
     fetch('http://localhost:3001/users',
     {method: "POST",
-    headers: {"ContentType":"application/json"},
-    body:JSON.stringify(newUserDetails)})
+    headers: {"Content-Type":"application/json"},
+    body:JSON.stringify(newUser)})
     .then(res=>res.json())
     .then(data=>handleLogin(data))
+  }
+
+  function handleOnChange(e){
+    const value = e.target.value
+    const name = e.target.name
+    setNewUser({...newUser,
+    [name]: value})
   }
   
   // function sendToFeed() {
@@ -33,7 +41,8 @@ function SignUp({handleLogin}) {
               name="name"
               id='name'
               placeholder='Username'
-              onChange={e => setNewUserDetails({...newUserDetails, name: e.target.value})} value={newUserDetails.name}/>
+              onChange={handleOnChange}
+              value={newUser.name}/>
             </div>
             {/* <div className='form-group'>
               <label htmlFor="email">Enter your email:</label>
@@ -41,7 +50,8 @@ function SignUp({handleLogin}) {
             </div> */}
             <div className='form-group'>
               <label htmlFor="password">Enter a password:</label>
-              <input type="password" name="password" id='password' placeholder='Password' onChange={e => setNewUserDetails({...newUserDetails, password: e.target.value})} value={newUserDetails.password}/>
+              <input type="password" name="password" id='password' placeholder='Password'
+              onChange={handleOnChange} value={newUser.password}/>
             </div>
             <input type="submit" value="submit"
             // onClick={() =>sendToFeed()}
