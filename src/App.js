@@ -26,21 +26,30 @@ function App() {
     .then(resp => resp.json())
     .then(setUserData)
   },[])
-  console.log(userData)
+  
 
   const handleLogin = details => {
-    setUser({
-      "name": details.name,
-      "email": details.email,
-      "password": details.password
-    });
-    console.log(user)
 
-    if (userData.includes(user)){
-      console.log('logged in')
-    }else{
+    let login = false
+    
+    userData.forEach(temp=>{
+
+      if(temp.password === details.password && temp.name === details.name){
+        console.log('logged in!')
+        login = true
+        setUser({
+          "name": details.name,
+          "email": details.email,
+          "password": details.password
+        });
+      }
+    })
+
+    if(!login){
+
       setError("Error: Incorrect Details")
     }
+
   }
 
   const handleLogout = () => {
