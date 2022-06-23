@@ -76,6 +76,15 @@ function App() {
   function handlePost(newPost) {
     console.log(newPost)
     newPost.username = user.currentUsername
+    newPost.profilePic = 'https://i1.wp.com/suiteplugins.com/wp-content/uploads/2019/10/blank-avatar.jpg?ssl=1'
+
+    fetch('http://localhost:3001/data', {
+      method: 'POST',
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(newPost)})
+      .then(response => response.json())
+      .then(data => SetPostsData([...postsData, data]))
+    
   }
 
 
