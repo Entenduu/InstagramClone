@@ -49,8 +49,8 @@ function PostCard({post, user, onLike}) {
   return (
 
     <div>
+      <br></br>
       <div className='card-container'>
-
       <Card style={{ width: '28rem' }}>
       <Card.Header>
         <Image src={post.profilePic} alt='pfp' className='img-fluid rounded-circle float-left' style={{ width: '2em', height: '2em', marginRight:'1em'}}></Image>
@@ -70,6 +70,7 @@ function PostCard({post, user, onLike}) {
         </Card.Body>
       </Card>
       </div>
+      <br></br>
     </div>
   )
 }

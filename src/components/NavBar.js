@@ -9,19 +9,19 @@ function NavBar( { onLogout }) {
     <div className='nav-bar' >
       <Navbar bg="light" variant="light" >
     
-    <Navbar.Brand href="/feed">
-    <img id='logo' src='http://localhost:3000/images/logo.png' alt='instagram logo'/>
-    </Navbar.Brand>
-    <Nav className="me-auto">
+      <Navbar.Brand href="/feed">
+      <img id='logo' src='http://localhost:3000/images/logo.png' alt='instagram logo'/>
+      </Navbar.Brand>
+      <Nav className="me-auto">
         <Nav.Link href="/feed/profile" >Profile</Nav.Link>
         <Nav.Link href="/feed/liked" >Liked Photos</Nav.Link>
         <Nav.Link href="/feed/makeapost" >Make a Post</Nav.Link>
         <Nav.Link onClick={onLogout} exact='true' href='/' >Log Out</Nav.Link>
         
         
-    </Nav>
+      </Nav>
   
-  </Navbar>
+      </Navbar>
     </div>
   )
 }

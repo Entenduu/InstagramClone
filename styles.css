@@ -114,3 +114,11 @@ form button {
 form button:hover {
     color: #FE4880;
 }
+
+div.nav-bar {
+    margin-bottom: 20px;
+}
+
+div.h2-headers {
+    padding-top: 15px;
+}
