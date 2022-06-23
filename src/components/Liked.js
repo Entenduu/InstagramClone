@@ -11,7 +11,7 @@ function Liked( { postsData, user, onLike }) {
     
     <div>
       <h2 className='h2-headers'>Your Liked Photos</h2>
-      {likedPosts}
+      {likedPosts.reverse()}
     </div>
   )
 }
