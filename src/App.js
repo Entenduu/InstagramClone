@@ -14,7 +14,7 @@ function App() {
   const history = useHistory()
 
   const [postsData, SetPostsData] = useState([]);
-  const [user, setUser] = useState(0)
+  const [user, setUser] = useState({})
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
@@ -68,7 +68,7 @@ function App() {
   }
 
   const handleLogout = () => {
-    setUser(0)
+    setUser({})
   }
 
   function handlePost(newPost) {
