@@ -2,25 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 
-function PostCard({post, user, onLike, userData}) {
+function PostCard({post, user, onLike }) {
 
   const [likeList, setLikeList] = useState(post.likes)
   const [heart, setHeart] = useState({icon:"♡", color: ""})
   const [profilePic, setProfilePic] = useState("")
 
   useEffect(()=>{
-  if(post.likes.includes(user.name)){
-    toggleHeart()
-  }
-  setLikeList(post.likes)
-
-  // if(userData){
-  // userData.forEach(temp => {
-  //   if(post.username === temp.name){
-  //     setProfilePic(temp.profilePic)
-  //   }
-  // })
-  // }
 
   fetch('http://localhost:3001/users')
   .then(res=>res.json())
@@ -34,13 +22,12 @@ function PostCard({post, user, onLike, userData}) {
 
   },[])
 
-
-
   useEffect(()=>{
     toggleHeart()
   },[likeList])
 
   function toggleHeart(){
+    console.log(likeList)
     if(likeList.includes(user.name)){
       setHeart({icon:"♥", color: "red"})
     }
@@ -68,9 +55,8 @@ function PostCard({post, user, onLike, userData}) {
   return (
 
     <div>
-      <br></br>
-
       <div className='card-container'>
+
       <Card style={{ width: '28rem' }}>
       <Card.Header>
         <Image src={profilePic} alt='pfp' className='img-fluid rounded-circle float-left' style={{ width: '2em', height: '2em', marginRight:'1em'}}></Image>
@@ -90,8 +76,8 @@ function PostCard({post, user, onLike, userData}) {
         </Card.Body>
       </Card>
       </div>
-
-      <br></br>
+      <br/>
+      <br/>
     </div>
   )
 }
