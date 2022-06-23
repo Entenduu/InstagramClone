@@ -183,6 +183,7 @@
       "id": 3,
       "name": "bop",
       "password": "password",
+<<<<<<< HEAD
       "profilePic": ""
     },
     {
@@ -203,5 +204,15 @@
     "name": "cris",
     "password": "cashmoney",
     "profilePic": "/images/avatars/cris.jpg"
+=======
+      "profilePic": "https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/DCTM_Penguin_UK_DK_AL674118_du57mv_lq8rif.jpg"
+    }
+  ],
+  "currentUser": {
+    "id": 3,
+    "name": "bop",
+    "password": "password",
+    "profilePic": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
+>>>>>>> glix
   }
 }
