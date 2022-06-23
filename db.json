@@ -198,24 +198,13 @@
       "password": "ellen",
       "profilePic": "/images/avatars/defaultIcon.png",
       "id": 6
-    },
-    {
-      "name": "ed",
-      "password": "pw",
-      "profilePic": "/images/avatars/defaultIcon.png",
-      "id": 7
-    },
-    {
-      "name": "ed",
-      "password": "password",
-      "profilePic": "/images/avatars/defaultIcon.png",
-      "id": 8
     }
   ],
   "currentUser": {
-    "id": 1,
-    "name": "griffin",
-    "password": "admin123",
-    "profilePic": "/images/avatars/griffin.jpg"
+    "id": 3,
+    "name": "bop",
+    "password": "password",
+    "profilePic": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
+
   }
 }
