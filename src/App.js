@@ -79,22 +79,31 @@ function App() {
   }
 
   function handleLike(post){
-    let updatedLikes = post.likes
-    if(updatedLikes.includes(user.name)){
-      updatedLikes=updatedLikes.filter(temp=>{
-        if(temp.name === user.name){
+
+    console.log(post)
+    console.log(user)
+    let updatedLikes = []
+
+    if(post.likes.includes(user.name)){
+      console.log("includes name")
+      updatedLikes = post.likes.filter(temp=>{
+        if(temp === user.name){
           return false
         }
         return true
       })
     } else {
-      updatedLikes=[...updatedLikes, user.name]
+      console.log("doesn't include name")
+      updatedLikes=[...post.likes, user.name]
     }
 
+    console.log(updatedLikes)
+
     fetch(`http://localhost:3001/data/${post.id}`,
-    {method: "PATCH",
-    headers:{'Content-Type':'application/json'},
-    body: { 'likes': JSON.stringify(updatedLikes)}})
+    {
+      method: "PATCH",
+      headers:{'Content-Type':'application/json'},
+      body: { "likes": JSON.stringify(updatedLikes)}})
     .then(res=>res.json)
     .then(data=>
       {
@@ -123,7 +132,7 @@ function App() {
 
 
       <Route path="/feed" >
-        <Feed user={user} postsData={postsData} handleLogout={handleLogout} onNewPost={handlePost} />
+        <Feed user={user} postsData={postsData} handleLogout={handleLogout} onNewPost={handlePost} onLike={handleLike}/>
       </Route>
 
     
