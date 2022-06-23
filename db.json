@@ -29,7 +29,8 @@
       "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
       "likes": [
-        "eddy"
+        "eddy",
+        "bop"
       ]
     },
     {
@@ -51,7 +52,8 @@
       "profilePic": "/images/avatars/user1.jpg",
       "comments": {},
       "likes": [
-        "cris"
+        "cris",
+        "bop"
       ]
     },
     {
@@ -61,7 +63,9 @@
       "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
       "profilePic": "/images/avatars/steve.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "bop"
+      ]
     },
     {
       "id": 7,
@@ -133,8 +137,8 @@
     }
   ],
   "currentUser": {
-    "id": 2,
-    "name": "cris",
-    "password": "cashmoney"
+    "id": 3,
+    "name": "bop",
+    "password": "password"
   }
 }

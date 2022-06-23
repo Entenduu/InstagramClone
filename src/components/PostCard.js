@@ -5,37 +5,42 @@ import Image from 'react-bootstrap/Image'
 function PostCard({post, user, onLike}) {
 
   // console.log(post)
-  const [likeList, setLikeList] = useState([])
+  const [likeList, setLikeList] = useState(post.likes)
+  const [heart, setHeart] = useState({icon:"♡", color: ""})
 
   useEffect(()=>{
-    const likeIcon = document.getElementById('like-icon')
-
-    if(post.likes.includes(user.name)){
-      likeIcon.innerText = "♥"
-      likeIcon.style.color = "red"
-    }
-    setLikeList(post.likes)
-    
+  if(post.likes.includes(user.name)){
+    toggleHeart()
+  }
+  setLikeList(post.likes)
   },[])
 
+
+  useEffect(()=>{
+    toggleHeart()
+  },[likeList])
+
+  function toggleHeart(){
+    if(likeList.includes(user.name)){
+      setHeart({icon:"♥", color: "red"})
+    }
+    if(!likeList.includes(user.name)){
+      setHeart({icon:"♡", color: ""})
+    }
+  }
+
   function handleClick(){
-    console.log("liked")
-    const likeIcon = document.getElementById('like-icon')
-    console.log(likeIcon)
-    if(likeIcon.innerText === "♥"){
-      likeIcon.innerText = "♡"
-      likeIcon.style.color = ""
+    // const likeIcon = document.getElementById('like-icon')
+
+    if(likeList.includes(user.name)){
       setLikeList(likeList.filter(temp => {
         if(temp === user.name){
           return false
         }
         return true
       }))
-      
+
     } else {
-      
-      likeIcon.innerText = "♥"
-      likeIcon.style.color = "red"
       setLikeList([...likeList, user.name])
     }
     onLike(post)
@@ -57,7 +62,7 @@ function PostCard({post, user, onLike}) {
         <Card.Body>
           <div>
         <Card.Subtitle >Liked by: {likeList.join(", ").toString()}</Card.Subtitle>
-        <Card.Subtitle id="like-icon" onClick={handleClick}>♡</Card.Subtitle>
+        <Card.Subtitle id="like-icon" onClick={handleClick} style={{color: heart.color}}>{heart.icon}</Card.Subtitle>
           <Card.Text>
             <b>{post.username}</b>  {post.caption}
             <br/>
