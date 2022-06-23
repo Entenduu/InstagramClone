@@ -6,7 +6,9 @@ import UserProfile from './UserProfile'
 import AllPosts from './AllPosts'
 import MakeAPost from './MakeAPost'
 
-function Feed({user, postsData, onNewPost, onLike, onLogout, pushToFeed}) {
+function Feed({user, postsData, onNewPost, onLike, onLogout, userData}) {
+
+    console.log(userData)
   
   return (
     <div>

@@ -126,6 +126,7 @@ function App() {
     })
   }
 
+  console.log(userData)
 
   return (
     
@@ -153,6 +154,7 @@ function App() {
         postsData={postsData} 
         onLogout={handleLogout} 
         onNewPost={handlePost} 
+        userData={userData}
         onLike={handleLike}/>
       </Route>
 
