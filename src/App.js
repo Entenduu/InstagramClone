@@ -80,33 +80,28 @@ function App() {
 
   function handleLike(post){
 
-    console.log(post)
-    console.log(user)
-    let updatedLikes = []
 
     if(post.likes.includes(user.name)){
-      console.log("includes name")
-      updatedLikes = post.likes.filter(temp=>{
+      post.likes = post.likes.filter(temp=>{
         if(temp === user.name){
           return false
         }
         return true
       })
     } else {
-      console.log("doesn't include name")
-      updatedLikes=[...post.likes, user.name]
+      post.likes=[...post.likes, user.name]
     }
-
-    console.log(updatedLikes)
 
     fetch(`http://localhost:3001/data/${post.id}`,
     {
       method: "PATCH",
       headers:{'Content-Type':'application/json'},
-      body: { "likes": JSON.stringify(updatedLikes)}})
-    .then(res=>res.json)
+      body: JSON.stringify(post)
+    })
+    .then(res=>res.json())
     .then(data=>
       {
+        console.log(data)
       setPostsData(postsData.map(postData=>
         {
         if(postData.id === post.id){
