@@ -7,7 +7,7 @@ function AllPosts({postsData, user, onLike}){
     })
     return (
         <>
-        {allPosts}
+        {allPosts.reverse()}
         </>
     )
 }
