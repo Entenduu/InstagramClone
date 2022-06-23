@@ -81,7 +81,9 @@
       "caption": "Never give up",
       "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "cris"
+      ]
     },
     {
       "username": "cris",
@@ -124,7 +126,8 @@
       "id": 15
     },
     {
-      "username": "lil bo peep",
+
+      "username": "griffin",
       "caption": "I love sheep",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sheep%2C_Stodmarsh_6.jpg",
       "profilePic": "",
@@ -133,13 +136,34 @@
       "id": 16
     },
     {
-      "username": "ellen",
-      "caption": "fruit basket",
-      "image": "https://roadrunnerflorist.com/wp-content/uploads/2018/09/holiday-fruit-basket.jpg",
+
+      "username": "cris",
+      "caption": "wendy",
+      "image": "https://i.imgur.com/qacboAZ.jpeg",
+      "profilePic": "",
+      "comments": {},
+      "likes": [],
+      "id": 17
+
+    },
+    {
+
+      "username": "cris",
+      "caption": "YO!",
+      "image": "https://i.imgur.com/GILWsYy.jpeg",
       "profilePic": "",
       "comments": {},
       "likes": [],
       "id": 18
+    },
+    {
+      "username": "cris",
+      "caption": "<3",
+      "image": "https://i.imgur.com/WKyRLrB.jpeg",
+      "profilePic": "",
+      "comments": {},
+      "likes": [],
+      "id": 19
     }
   ],
   "users": [
@@ -175,9 +199,9 @@
     }
   ],
   "currentUser": {
-    "id": 3,
-    "name": "bop",
-    "password": "password",
-    "profilePic": ""
+    "id": 2,
+    "name": "cris",
+    "password": "cashmoney",
+    "profilePic": "/images/avatars/cris.jpg"
   }
 }
