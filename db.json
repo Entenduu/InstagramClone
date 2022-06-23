@@ -9,8 +9,7 @@
       "comments": {},
       "likes": [
         "cris",
-        "bop",
-        "eddy"
+        "bop"
       ]
     },
     {
@@ -129,8 +128,10 @@
     }
   ],
   "currentUser": {
-    "id": 2,
-    "name": "cris",
-    "password": "cashmoney"
+
+    "id": 3,
+    "name": "bop",
+    "password": "password"
+
   }
 }
