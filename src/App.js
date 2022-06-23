@@ -13,8 +13,10 @@ function App() {
 
   const history = useHistory()
 
+
   const [postsData, setPostsData] = useState([]);
   const [user, setUser] = useState(0)
+
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
