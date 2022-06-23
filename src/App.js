@@ -31,7 +31,7 @@ function App() {
     .then(resp => resp.json())
     .then(setUserData)
   },[])
-  console.log(userData)
+
 
   const handleLogin = details => {
 
@@ -77,7 +77,7 @@ function App() {
   }
 
   function handlePost(newPost) {
-    console.log(newPost)
+
     newPost.username = user.name
     fetch('http://localhost:3001/data',{
         method: 'POST',

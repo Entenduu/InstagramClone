@@ -83,7 +83,9 @@
       "caption": "Never give up",
       "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "bop"
+      ]
     },
     {
       "username": "cris",
@@ -155,7 +157,10 @@
       "image": "https://i.imgur.com/WKyRLrB.jpeg",
       "profilePic": "",
       "comments": {},
-      "likes": [],
+      "likes": [
+        "cris",
+        "bop"
+      ],
       "id": 18
     }
   ],
@@ -180,9 +185,9 @@
     }
   ],
   "currentUser": {
-    "id": 2,
-    "name": "cris",
-    "password": "cashmoney",
-    "profilePic": "/images/avatars/cris.jpg"
+    "id": 3,
+    "name": "bop",
+    "password": "password",
+    "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
   }
 }

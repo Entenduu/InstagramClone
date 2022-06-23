@@ -9,8 +9,6 @@ function PostCard({post, user, onLike }) {
   const [profilePic, setProfilePic] = useState("")
 
   useEffect(()=>{
-  toggleHeart()
-  setLikeList(post.likes)
 
   fetch('http://localhost:3001/users')
   .then(res=>res.json())
@@ -24,13 +22,12 @@ function PostCard({post, user, onLike }) {
 
   },[])
 
-
-
   useEffect(()=>{
     toggleHeart()
   },[likeList])
 
   function toggleHeart(){
+    console.log(likeList)
     if(likeList.includes(user.name)){
       setHeart({icon:"♥", color: "red"})
     }

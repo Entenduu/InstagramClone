@@ -12,7 +12,6 @@ function UserProfile({postsData, user, updateProfilePic}) {
   })
 
   function handleChange(e){
-    console.log(e.target.value)
     setProfilePic(e.target.value)
   }
 
