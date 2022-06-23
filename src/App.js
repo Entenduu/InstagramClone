@@ -38,7 +38,7 @@ function App() {
     
     userData.forEach(temp=>{
 
-      if(temp.password === details.password && temp.name === detailsnpm.name){
+      if(temp.password === details.password && temp.name === details.name){
         console.log('logged in!')
         login = true
         
