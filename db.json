@@ -10,7 +10,8 @@
       "likes": [
         "cris",
         "bop",
-        "eddy"
+        "eddy",
+        "griffin"
       ]
     },
     {
@@ -20,7 +21,10 @@
       "image": "/images/users/raphael/2.jpg",
       "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "eddy",
+        "griffin"
+      ]
     },
     {
       "id": 3,
@@ -30,7 +34,8 @@
       "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
       "likes": [
-        "eddy"
+        "eddy",
+        "griffin"
       ]
     },
     {
