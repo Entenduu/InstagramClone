@@ -24,10 +24,18 @@ function PostCard({post, user, onLike }) {
 
   useEffect(()=>{
     toggleHeart()
-  },[likeList])
+  },[likeList, user])
+
+  useEffect(()=>{
+    if(!user){
+      fetch('http://localhost:3001/currentUser')
+      .then(res=>res.json())
+      .then(data=>{user=data})
+    }
+  },[])
 
   function toggleHeart(){
-    console.log(likeList)
+
     if(likeList.includes(user.name)){
       setHeart({icon:"♥", color: "red"})
     }
