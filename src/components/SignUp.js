@@ -1,8 +1,6 @@
 import {React, useState} from 'react'
-// import { useHistory } from 'react-router-dom'
 
 function SignUp({handleLogin}) {
-  // const history = useHistory()
 
   const [newUser, setNewUser] = useState({name: "", password: ""})
 
@@ -23,10 +21,6 @@ function SignUp({handleLogin}) {
     setNewUser({...newUser,
     [name]: value})
   }
-  
-  // function sendToFeed() {
-  //   history.push('/feed')
-  // }
 
   return (
     <div className='sign-up-form'>
@@ -44,18 +38,12 @@ function SignUp({handleLogin}) {
               onChange={handleOnChange}
               value={newUser.name}/>
             </div>
-            {/* <div className='form-group'>
-              <label htmlFor="email">Enter your email:</label>
-              <input type="email" name="email" id='email' placeholder='Email' onChange={e => setNewUserDetails({...newUserDetails, email: e.target.value})} value={newUserDetails.email}/>
-            </div> */}
             <div className='form-group'>
               <label htmlFor="password">Enter a password:</label>
               <input type="password" name="password" id='password' placeholder='Password'
               onChange={handleOnChange} value={newUser.password}/>
             </div>
-            <input type="submit" value="Submit"
-            // onClick={() =>sendToFeed()}
-            />
+            <input type="submit" value="Submit"/>
           </div>
         </form>
 

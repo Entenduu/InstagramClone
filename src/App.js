@@ -14,7 +14,7 @@ function App() {
   const history = useHistory()
 
   const [postsData, SetPostsData] = useState([]);
-  const [user, setUser] = useState(0)
+  const [user, setUser] = useState({})
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
@@ -43,9 +43,7 @@ function App() {
         fetch(`http://localhost:3001/currentUser`,{
           method: 'PATCH',
           headers:{"Content-Type":"application/json"},
-          body: JSON.stringify({
-            currentUsername: temp.name
-          })
+          body: JSON.stringify(temp)
         })
         .then( history.push("/feed"))
       }
@@ -70,8 +68,23 @@ function App() {
   }
 
   const handleLogout = () => {
-    setUser(0)
+    setUser({})
   }
+
+  function handlePost(newPost) {
+    console.log(newPost)
+    newPost.username = user.name
+    newPost.profilePic = 'https://i1.wp.com/suiteplugins.com/wp-content/uploads/2019/10/blank-avatar.jpg?ssl=1'
+
+    fetch('http://localhost:3001/data', {
+      method: 'POST',
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(newPost)})
+      .then(response => response.json())
+      .then(data => SetPostsData([...postsData, data]))
+    
+  }
+
 
   return (
     
@@ -87,7 +100,7 @@ function App() {
 
 
       <Route path="/feed" >
-        <Feed user={user} postsData={postsData} handleLogout={handleLogout} />
+        <Feed user={user} postsData={postsData} handleLogout={handleLogout} onNewPost={handlePost} />
       </Route>
 
     

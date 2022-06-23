@@ -110,6 +110,9 @@
     }
   ],
   "currentUser": {
-    "currentUsername": "cris"
+    "currentUsername": "cris",
+    "id": 2,
+    "name": "cris",
+    "password": "cashmoney"
   }
 }
