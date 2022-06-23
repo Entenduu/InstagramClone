@@ -15,7 +15,7 @@ function App() {
 
 
   const [postsData, setPostsData] = useState([]);
-  const [user, setUser] = useState(0)
+  const [user, setUser] = useState({})
 
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
@@ -47,7 +47,7 @@ function App() {
           headers:{"Content-Type":"application/json"},
           body: JSON.stringify(temp)
         })
-        .then( history.push("/feed"))
+        .then(pushToFeed)
       }
     })
 
@@ -63,7 +63,9 @@ function App() {
     .then(setUser)
   },[])
 
-
+  function pushToFeed() {
+    history.push("/feed")
+  }
 
   function handleSignup(){
     history.push("/signup")
@@ -118,16 +120,28 @@ function App() {
     <div className="App">
 
       <Route exact path="/" >
-        <Login handleLogin={handleLogin} error={error} onSignup={handleSignup}/>
+        <Login 
+        handleLogin={handleLogin} 
+        error={error} 
+        onSignup={handleSignup}/>
       </Route>
 
       <Route path="/signup" >
-        <SignUp handleLogin={handleLogin} />
+        <SignUp 
+        handleLogin={handleLogin} 
+        pushToFeed={pushToFeed} 
+        user={user} 
+        setUser={setUser} />
       </Route>
 
 
       <Route path="/feed" >
-        <Feed user={user} postsData={postsData} handleLogout={handleLogout} onNewPost={handlePost} onLike={handleLike}/>
+        <Feed 
+        user={user} 
+        postsData={postsData} 
+        handleLogout={handleLogout} 
+        onNewPost={handlePost} 
+        onLike={handleLike}/>
       </Route>
 
     

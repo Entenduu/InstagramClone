@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 
-function MakeAPost({onNewPost, user}) {
+function MakeAPost({onNewPost}) {
 
     const [formFields, setFormFields] = useState({image: '', caption: ''})
 
@@ -27,8 +27,6 @@ function MakeAPost({onNewPost, user}) {
         console.log(newPost)
         onNewPost(newPost)
     }
-
-    
 
     console.log(formFields)
 

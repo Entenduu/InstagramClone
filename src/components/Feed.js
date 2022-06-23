@@ -8,7 +8,6 @@ import MakeAPost from './MakeAPost'
 
 function Feed({user, postsData, onNewPost, onLike}) {
   
-  
   return (
     <div>
         <NavBar /> 
@@ -21,7 +20,7 @@ function Feed({user, postsData, onNewPost, onLike}) {
                 <UserProfile postsData={postsData} user={user} onLike={onLike}/>
             </Route>
             <Route path="/feed/makeapost">
-                <MakeAPost onNewPost={onNewPost} user={user} />
+                <MakeAPost onNewPost={onNewPost} user={user}/>
             </Route>
             <AllPosts postsData={postsData} user={user} onLike={onLike}/>
         </Switch>

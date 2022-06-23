@@ -118,6 +118,11 @@
       "id": 5,
       "name": "tiger",
       "password": "dog"
+    },
+    {
+      "name": "little bo peep",
+      "password": "ilovesheep",
+      "id": 6
     }
   ],
   "currentUser": {
