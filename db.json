@@ -4,8 +4,8 @@
       "id": 1,
       "username": "griffin",
       "caption": "a caption",
-      "image": "./images/users/raphael/1.jpg",
-      "profilePic": "./images/avatars/griffin.jpg",
+      "image": "/images/users/raphael/1.jpg",
+      "profilePic": "/images/avatars/griffin.jpg",
       "comments": {},
       "likes": []
     },
@@ -13,8 +13,8 @@
       "id": 2,
       "username": "cris",
       "caption": "a different caption",
-      "image": "./images/users/raphael/2.jpg",
-      "profilePic": "./images/avatars/cris.jpg",
+      "image": "/images/users/raphael/2.jpg",
+      "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
       "likes": []
     },
@@ -23,7 +23,7 @@
       "username": "cris",
       "caption": "neat",
       "image": "/images/users/raphael/3.jpg",
-      "profilePic": "./images/avatars/cris.jpg",
+      "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
       "likes": []
     },
@@ -32,7 +32,7 @@
       "username": "griffin",
       "caption": "rad",
       "image": "/images/users/raphael/4.jpg",
-      "profilePic": "./images/avatars/griffin.jpg",
+      "profilePic": "/images/avatars/griffin.jpg",
       "comments": {},
       "likes": []
     },
@@ -40,8 +40,8 @@
       "id": 5,
       "username": "julia",
       "caption": "tree hugger",
-      "image": "./images/users/raphael/5.jpg",
-      "profilePic": "./images/avatars/user1.jpg",
+      "image": "/images/users/raphael/5.jpg",
+      "profilePic": "/images/avatars/user1.jpg",
       "comments": {},
       "likes": []
     },
@@ -50,7 +50,7 @@
       "username": "US National Parks Service",
       "caption": "Zion National Park",
       "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
-      "profilePic": "./images/avatars/steve.jpg",
+      "profilePic": "/images/avatars/steve.jpg",
       "comments": {},
       "likes": []
     },
@@ -59,7 +59,7 @@
       "username": "Edgar",
       "caption": "Wow",
       "image": "https://vagabundler.com/wp-content/uploads/2019/06/P3160164-Copy.jpg",
-      "profilePic": "./images/avatars/user2.jpg",
+      "profilePic": "/images/avatars/user2.jpg",
       "comments": {},
       "likes": []
     },
@@ -68,7 +68,7 @@
       "username": "Amy",
       "caption": "Really makes you think...",
       "image": "https://ae01.alicdn.com/kf/HTB17XIuNpXXXXc8XpXXq6xXFXXXl/Jingdezhen-Traditional-Chiese-Ceramic-Vase-Water-Point-Peach-Flower-Pottery-Porcelain-Vase-Tabletop-Vase-Home-Decor.jpg",
-      "profilePic": "./images/avatars/user3.jpg",
+      "profilePic": "/images/avatars/user3.jpg",
       "comments": {},
       "likes": []
     },
@@ -77,7 +77,7 @@
       "username": "Thomas",
       "caption": "Never give up",
       "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
-      "profilePic": "./images/avatars/user4.jpg",
+      "profilePic": "/images/avatars/user4.jpg",
       "comments": {},
       "likes": []
     }
