@@ -31,6 +31,7 @@ function App() {
     .then(resp => resp.json())
     .then(setUserData)
   },[])
+  console.log(userData)
 
   const handleLogin = details => {
 

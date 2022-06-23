@@ -4,7 +4,6 @@ import Image from 'react-bootstrap/Image'
 
 function PostCard({post, user, onLike}) {
 
-  // console.log(post)
   const [likeList, setLikeList] = useState(post.likes)
   const [heart, setHeart] = useState({icon:"♡", color: ""})
 
@@ -30,7 +29,6 @@ function PostCard({post, user, onLike}) {
   }
 
   function handleClick(){
-    // const likeIcon = document.getElementById('like-icon')
 
     if(likeList.includes(user.name)){
       setLikeList(likeList.filter(temp => {
@@ -49,7 +47,6 @@ function PostCard({post, user, onLike}) {
   return (
 
     <div>
-      
       <div className='card-container'>
 
       <Card style={{ width: '28rem' }}>
@@ -71,7 +68,8 @@ function PostCard({post, user, onLike}) {
         </Card.Body>
       </Card>
       </div>
-      <br/><br/>
+      <br/>
+      <br/>
     </div>
   )
 }
