@@ -15,7 +15,7 @@ function UserProfile({postsData, user}) {
     <div>
       <h2 className='h2-headers' >Welcome, {user.name}!</h2>
       {userPosts.map(post =>{
-        return <PostCard key={post.id} post={post}/>
+        return <PostCard key={post.id} post={post} user={user}/>
       })}
     </div>
   )
