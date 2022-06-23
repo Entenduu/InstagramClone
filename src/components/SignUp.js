@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 
 function SignUp({handleLogin, pushToFeed, user, setUser}) {
 
@@ -21,6 +21,12 @@ function SignUp({handleLogin, pushToFeed, user, setUser}) {
     setNewUser({...newUser,
     [name]: value})
   }
+
+
+  useEffect(() => {
+    setUser(newUser)
+  }, [setNewUser])
+  
 
   return (
     <div id='sign-up-form' className='all-forms-div'>

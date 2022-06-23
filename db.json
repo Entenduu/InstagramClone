@@ -126,7 +126,6 @@
       "id": 15
     },
     {
-
       "username": "griffin",
       "caption": "I love sheep",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sheep%2C_Stodmarsh_6.jpg",
@@ -136,24 +135,25 @@
       "id": 16
     },
     {
-
       "username": "cris",
       "caption": "wendy",
       "image": "https://i.imgur.com/qacboAZ.jpeg",
       "profilePic": "",
       "comments": {},
-      "likes": [],
+      "likes": [
+        "griffin"
+      ],
       "id": 17
-
     },
     {
-
       "username": "cris",
       "caption": "YO!",
       "image": "https://i.imgur.com/GILWsYy.jpeg",
       "profilePic": "",
       "comments": {},
-      "likes": [],
+      "likes": [
+        "griffin"
+      ],
       "id": 18
     },
     {
@@ -162,7 +162,9 @@
       "image": "https://i.imgur.com/WKyRLrB.jpeg",
       "profilePic": "",
       "comments": {},
-      "likes": [],
+      "likes": [
+        "griffin"
+      ],
       "id": 19
     }
   ],
@@ -196,12 +198,24 @@
       "password": "ellen",
       "profilePic": "/images/avatars/defaultIcon.png",
       "id": 6
+    },
+    {
+      "name": "ed",
+      "password": "pw",
+      "profilePic": "/images/avatars/defaultIcon.png",
+      "id": 7
+    },
+    {
+      "name": "ed",
+      "password": "password",
+      "profilePic": "/images/avatars/defaultIcon.png",
+      "id": 8
     }
   ],
   "currentUser": {
-    "id": 2,
-    "name": "cris",
-    "password": "cashmoney",
-    "profilePic": "/images/avatars/cris.jpg"
+    "id": 1,
+    "name": "griffin",
+    "password": "admin123",
+    "profilePic": "/images/avatars/griffin.jpg"
   }
 }
