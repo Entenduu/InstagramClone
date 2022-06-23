@@ -127,7 +127,27 @@ function App() {
     })
   }
 
-  console.log(userData)
+  function handleChangeProfilePic(picUrl){
+    let updatedUser = {...user}
+    updatedUser.profilePic = picUrl
+    fetch(`http://localhost:3001/users/${user.id}`,
+    {
+      method: 'PATCH',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(updatedUser)
+    })
+    .then(res=>res.json)
+    .then(data => {
+      setUserData(userData.map(temp=>{
+        if(temp.id === user.id){
+          return data
+        }
+        else {return temp}
+      }))
+    })
+    
+  }
+
 
   return (
     
@@ -155,8 +175,8 @@ function App() {
         postsData={postsData} 
         onLogout={handleLogout} 
         onNewPost={handlePost} 
-        userData={userData}
-        onLike={handleLike}/>
+        onLike={handleLike}
+        updateProfilePic={handleChangeProfilePic}/>
       </Route>
 
     
