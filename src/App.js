@@ -13,15 +13,17 @@ function App() {
 
   const history = useHistory()
 
-  const [postsData, SetPostsData] = useState([]);
-  const [user, setUser] = useState({})
+
+  const [postsData, setPostsData] = useState([]);
+  const [user, setUser] = useState(0)
+
   const [error, setError] = useState("")
   const [userData, setUserData] = useState([]);
 
   useEffect(()=>{
     fetch('http://localhost:3001/data')
     .then(resp => resp.json())
-    .then(SetPostsData)
+    .then(setPostsData)
   }, [])
 
   useEffect(()=>{
@@ -36,7 +38,7 @@ function App() {
     
     userData.forEach(temp=>{
 
-      if(temp.password === details.password && temp.name === details.name){
+      if(temp.password === details.password && temp.name === detailsnpm.name){
         console.log('logged in!')
         login = true
         
@@ -74,15 +76,36 @@ function App() {
   function handlePost(newPost) {
     console.log(newPost)
     newPost.username = user.name
-    newPost.profilePic = 'https://i1.wp.com/suiteplugins.com/wp-content/uploads/2019/10/blank-avatar.jpg?ssl=1'
+  }
 
-    fetch('http://localhost:3001/data', {
-      method: 'POST',
-      headers:{"Content-Type":"application/json"},
-      body: JSON.stringify(newPost)})
-      .then(response => response.json())
-      .then(data => SetPostsData([...postsData, data]))
-    
+  function handleLike(post){
+    let updatedLikes = post.likes
+    if(updatedLikes.includes(user.name)){
+      updatedLikes=updatedLikes.filter(temp=>{
+        if(temp.name === user.name){
+          return false
+        }
+        return true
+      })
+    } else {
+      updatedLikes=[...updatedLikes, user.name]
+    }
+
+    fetch(`http://localhost:3001/data/${post.id}`,
+    {method: "PATCH",
+    headers:{'Content-Type':'application/json'},
+    body: { 'likes': JSON.stringify(updatedLikes)}})
+    .then(res=>res.json)
+    .then(data=>
+      {
+      setPostsData(postsData.map(postData=>
+        {
+        if(postData.id === post.id){
+          return data
+        }
+        return postData
+      }))
+    })
   }
 
 
