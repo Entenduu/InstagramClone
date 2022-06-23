@@ -18,8 +18,10 @@ function SignUp({handleLogin}) {
   function handleOnChange(e){
     const value = e.target.value
     const name = e.target.name
+    const password = e.target.password
     setNewUser({...newUser,
-    [name]: value})
+    [name]: value,
+    [password]: value})
   }
 
   return (
