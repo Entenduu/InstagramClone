@@ -31,6 +31,7 @@ function App() {
     .then(resp => resp.json())
     .then(setUserData)
   },[])
+  console.log(userData)
 
   const handleLogin = details => {
 
@@ -143,6 +144,8 @@ function App() {
         }
         else {return temp}
       }))
+      setUser(updatedUser)
+      history.push("/feed")
     })
     
   }
@@ -172,7 +175,7 @@ function App() {
         <Feed 
         user={user}
         postsData={postsData} 
-        handleLogout={handleLogout} 
+        onLogout={handleLogout} 
         onNewPost={handlePost} 
         onLike={handleLike}
         updateProfilePic={handleChangeProfilePic}/>
