@@ -80,6 +80,15 @@
       "profilePic": "./images/avatars/user4.jpg",
       "comments": {},
       "likes": []
+    },
+    {
+      "username": "bop",
+      "caption": "good doggy",
+      "image": "https://doggowner.com/wp-content/uploads/2020/08/brown-dog-names-cover-image.jpg",
+      "profilePic": "https://i1.wp.com/suiteplugins.com/wp-content/uploads/2019/10/blank-avatar.jpg?ssl=1",
+      "comments": {},
+      "likes": [],
+      "id": 10
     }
   ],
   "users": [

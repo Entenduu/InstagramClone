@@ -7,7 +7,7 @@ function UserProfile({postsData, user}) {
 
   const userPosts = postsData.map(post => {
     
-    if(post.username === user.currentUsername){
+    if(post.username === user.name){
       return <PostCard key={post.id} post={post}/>
     }else {
       return null

@@ -73,7 +73,7 @@ function App() {
 
   function handlePost(newPost) {
     console.log(newPost)
-    newPost.username = user.currentUsername
+    newPost.username = user.name
     newPost.profilePic = 'https://i1.wp.com/suiteplugins.com/wp-content/uploads/2019/10/blank-avatar.jpg?ssl=1'
 
     fetch('http://localhost:3001/data', {
