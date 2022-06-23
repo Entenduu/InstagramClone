@@ -6,11 +6,11 @@ import UserProfile from './UserProfile'
 import AllPosts from './AllPosts'
 import MakeAPost from './MakeAPost'
 
-function Feed({user, postsData, onNewPost, onLike}) {
+function Feed({user, postsData, onNewPost, onLike, onLogout, pushToFeed}) {
   
   return (
     <div>
-        <NavBar /> 
+        <NavBar onLogout={onLogout} /> 
         
         <Switch>
             <Route path="/feed/liked" >
@@ -20,7 +20,7 @@ function Feed({user, postsData, onNewPost, onLike}) {
                 <UserProfile postsData={postsData} user={user} onLike={onLike}/>
             </Route>
             <Route path="/feed/makeapost">
-                <MakeAPost onNewPost={onNewPost} user={user}/>
+                <MakeAPost onNewPost={onNewPost} user={user} pushToFeed={pushToFeed} />
             </Route>
             <AllPosts postsData={postsData} user={user} onLike={onLike}/>
         </Switch>

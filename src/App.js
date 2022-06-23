@@ -149,9 +149,10 @@ function App() {
         <Feed 
         user={user} 
         postsData={postsData} 
-        handleLogout={handleLogout} 
+        onLogout={handleLogout} 
         onNewPost={handlePost} 
         onLike={handleLike}/>
+        handlePush={pushToFeed}
       </Route>
 
     
