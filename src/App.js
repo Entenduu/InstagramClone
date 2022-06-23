@@ -87,7 +87,6 @@ function App() {
       })
       .then(resp => resp.json())
       .then(data=>{
-        console.log(data)
         setPostsData([...postsData, data])
       })
       .then( history.push("/feed"))
