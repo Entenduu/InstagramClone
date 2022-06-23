@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 function PostCard({post, user, onLike}) {
 
   // console.log(post)
-  const [likeList, setLikeList] = useState("")
+  const [likeList, setLikeList] = useState([])
 
   useEffect(()=>{
     const likeIcon = document.getElementById('like-icon')
@@ -14,14 +14,27 @@ function PostCard({post, user, onLike}) {
       likeIcon.innerText = "♥"
       likeIcon.style.color = "red"
     }
-
-    console.log(post.likes)
-    setLikeList(post.likes.join(", ").toString())
+    setLikeList(post.likes)
     
   },[])
 
   function handleClick(){
     console.log("liked")
+    const likeIcon = document.getElementById('like-icon')
+    if(likeIcon.innerText === "♥"){
+      setLikeList(likeList.filter(temp => {
+        if(temp === user.name){
+          return false
+        }
+        return true
+      }))
+      likeIcon.innerText = "♡"
+      likeIcon.style.color = ""
+    } else {
+      setLikeList([...likeList, user.name])
+      likeIcon.innerText = "♥"
+      likeIcon.style.color = "red"
+    }
     onLike(post)
   }
 
@@ -40,7 +53,7 @@ function PostCard({post, user, onLike}) {
         <Card.Img variant="top" src={post.image}/>
         <Card.Body>
           <div>
-        <Card.Subtitle >Liked by: {likeList}</Card.Subtitle>
+        <Card.Subtitle >Liked by: {likeList.join(", ").toString()}</Card.Subtitle>
         <Card.Subtitle id="like-icon" onClick={handleClick}>♡</Card.Subtitle>
           <Card.Text>
             <b>{post.username}</b>  {post.caption}
