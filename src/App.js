@@ -149,7 +149,7 @@ function App() {
 
       <Route path="/feed" >
         <Feed 
-        user={user} 
+        user={user}
         postsData={postsData} 
         handleLogout={handleLogout} 
         onNewPost={handlePost} 
