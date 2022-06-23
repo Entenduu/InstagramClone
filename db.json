@@ -40,7 +40,7 @@
       "id": 5,
       "username": "julia",
       "caption": "tree hugger",
-      "image": "./images/users/raphael/5.jpg",
+      "image": "/images/users/raphael/5.jpg",
       "profilePic": "/images/avatars/user1.jpg",
       "comments": {},
       "likes": []
