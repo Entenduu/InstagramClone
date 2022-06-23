@@ -15,9 +15,7 @@ function UserProfile({postsData, user}) {
   })
 
   return (
-    <div>{userPosts}
-      <button>New Post</button>
-    </div>
+    <div>{userPosts}</div>
   )
 }
 

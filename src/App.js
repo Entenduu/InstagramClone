@@ -73,6 +73,12 @@ function App() {
     setUser(0)
   }
 
+  function handlePost(newPost) {
+    console.log(newPost)
+    newPost.username = user.currentUsername
+  }
+
+
   return (
     
     <div className="App">
@@ -87,7 +93,7 @@ function App() {
 
 
       <Route path="/feed" >
-        <Feed user={user} postsData={postsData} handleLogout={handleLogout} />
+        <Feed user={user} postsData={postsData} handleLogout={handleLogout} onNewPost={handlePost} />
       </Route>
 
     

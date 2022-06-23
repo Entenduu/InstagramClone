@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 
-function MakeAPost() {
+function MakeAPost({onNewPost, user}) {
 
     const [formFields, setFormFields] = useState({image: '', caption: ''})
 
@@ -10,13 +10,31 @@ function MakeAPost() {
 
     function handleSubmit(e) {
         e.preventDefault()
+
+        const newPost = {  
+        "username": "",
+        "caption": "",
+        "image": "",
+        "profilePic": "",
+        "comments": {},
+        "likes": []}
+
+        
+        newPost.image = formFields.image
+        newPost.caption = formFields.caption
+    
+
+        console.log(newPost)
+        onNewPost(newPost)
     }
+
+    
 
     console.log(formFields)
 
   return (
     <div>
-        <form onSubmit={e => handleSubmit(e)} >
+        <form onSubmit={handleSubmit} >
             <h2>Make a Post</h2>
             <div className='form-group'>
               <label>Image URL:</label>
