@@ -147,6 +147,8 @@ function App() {
         }
         else {return temp}
       }))
+      setUser(updatedUser)
+      history.push("/feed")
     })
     
   }
