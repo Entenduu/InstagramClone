@@ -9,7 +9,8 @@
       "comments": {},
       "likes": [
         "cris",
-        "bop"
+        "bop",
+        "eddy"
       ]
     },
     {
@@ -28,7 +29,9 @@
       "image": "/images/users/raphael/3.jpg",
       "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "eddy"
+      ]
     },
     {
       "id": 4,
@@ -113,8 +116,8 @@
     }
   ],
   "currentUser": {
-    "id": 24,
-    "name": "eddy",
-    "password": "eddyisready"
+    "id": 1,
+    "name": "griffin",
+    "password": "admin123"
   }
 }
