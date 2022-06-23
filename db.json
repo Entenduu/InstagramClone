@@ -5,7 +5,6 @@
       "username": "griffin",
       "caption": "a caption",
       "image": "/images/users/raphael/1.jpg",
-      "profilePic": "/images/avatars/griffin.jpg",
       "comments": {},
       "likes": []
     },
@@ -14,7 +13,6 @@
       "username": "cris",
       "caption": "a different caption",
       "image": "/images/users/raphael/2.jpg",
-      "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
       "likes": [
         "eddy",
@@ -26,7 +24,6 @@
       "username": "cris",
       "caption": "neat",
       "image": "/images/users/raphael/3.jpg",
-      "profilePic": "/images/avatars/cris.jpg",
       "comments": {},
       "likes": [
         "eddy",
@@ -38,7 +35,6 @@
       "username": "griffin",
       "caption": "rad",
       "image": "/images/users/raphael/4.jpg",
-      "profilePic": "/images/avatars/griffin.jpg",
       "comments": {},
       "likes": [
         "cris"
@@ -46,10 +42,9 @@
     },
     {
       "id": 5,
-      "username": "julia",
+      "username": "bop",
       "caption": "tree hugger",
       "image": "/images/users/raphael/5.jpg",
-      "profilePic": "/images/avatars/user1.jpg",
       "comments": {},
       "likes": [
         "cris",
@@ -58,10 +53,9 @@
     },
     {
       "id": 6,
-      "username": "US National Parks Service",
+      "username": "griffin",
       "caption": "Zion National Park",
       "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
-      "profilePic": "/images/avatars/steve.jpg",
       "comments": {},
       "likes": [
         "bop"
@@ -69,28 +63,25 @@
     },
     {
       "id": 7,
-      "username": "Edgar",
+      "username": "bop",
       "caption": "Wow",
       "image": "https://vagabundler.com/wp-content/uploads/2019/06/P3160164-Copy.jpg",
-      "profilePic": "/images/avatars/user2.jpg",
       "comments": {},
       "likes": []
     },
     {
       "id": 8,
-      "username": "Amy",
+      "username": "cris",
       "caption": "Really makes you think...",
       "image": "https://ae01.alicdn.com/kf/HTB17XIuNpXXXXc8XpXXq6xXFXXXl/Jingdezhen-Traditional-Chiese-Ceramic-Vase-Water-Point-Peach-Flower-Pottery-Porcelain-Vase-Tabletop-Vase-Home-Decor.jpg",
-      "profilePic": "/images/avatars/user3.jpg",
       "comments": {},
       "likes": []
     },
     {
       "id": 9,
-      "username": "Thomas",
+      "username": "griffin",
       "caption": "Never give up",
       "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
-      "profilePic": "/images/avatars/user4.jpg",
       "comments": {},
       "likes": []
     },
@@ -98,7 +89,6 @@
       "username": "cris",
       "caption": "nyc",
       "image": "https://i.imgur.com/MzrRNi4.jpeg",
-      "profilePic": "",
       "comments": {},
       "likes": [],
       "id": 11
@@ -107,7 +97,6 @@
       "username": "bop",
       "caption": "tiger",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
-      "profilePic": "",
       "comments": {},
       "likes": [],
       "id": 12
@@ -116,7 +105,6 @@
       "username": "bop",
       "caption": "not a dog",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
-      "profilePic": "",
       "comments": {},
       "likes": [],
       "id": 13
@@ -125,7 +113,6 @@
       "username": "bop",
       "caption": "hi",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
-      "profilePic": "",
       "comments": {},
       "likes": [],
       "id": 14
@@ -134,7 +121,6 @@
       "username": "bop",
       "caption": "cat",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
-      "profilePic": "",
       "comments": {},
       "likes": [],
       "id": 15
@@ -144,37 +130,26 @@
     {
       "id": 1,
       "name": "griffin",
-      "password": "admin123"
+      "password": "admin123",
+      "profilePic": "/images/avatars/griffin.jpg"
     },
     {
       "id": 2,
       "name": "cris",
-      "password": "cashmoney"
+      "password": "cashmoney",
+      "profilePic": "/images/avatars/cris.jpg"
     },
     {
       "id": 3,
       "name": "bop",
-      "password": "password"
-    },
-    {
-      "id": 4,
-      "name": "tiger",
-      "password": "dog"
-    },
-    {
-      "id": 5,
-      "name": "tiger",
-      "password": "dog"
-    },
-    {
-      "name": "little bo peep",
-      "password": "ilovesheep",
-      "id": 6
+      "password": "password",
+      "profilePic": ""
     }
   ],
   "currentUser": {
-    "id": 2,
-    "name": "cris",
-    "password": "cashmoney"
+    "id": 3,
+    "name": "bop",
+    "password": "password",
+    "profilePic": ""
   }
 }
