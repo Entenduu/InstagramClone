@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 
-function SignUp({handleLogin}) {
+function SignUp({handleLogin, pushToFeed, user, setUser}) {
 
   const [newUser, setNewUser] = useState({name: "", password: ""})
 
@@ -18,10 +18,8 @@ function SignUp({handleLogin}) {
   function handleOnChange(e){
     const value = e.target.value
     const name = e.target.name
-    const password = e.target.password
     setNewUser({...newUser,
-    [name]: value,
-    [password]: value})
+    [name]: value})
   }
 
   return (

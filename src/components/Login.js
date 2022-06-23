@@ -10,16 +10,6 @@ function Login({ handleLogin, error, onSignup}) {
       handleLogin(details)
     }
 
-    // const history = useHistory()
-
-    // function sendToFeed() {
-    //     history.push('/feed')
-    // }
-
-    // function sendToSignUp() {
-    //     history.push('/signup')
-    // }
-
   return (
     <div className='all-forms-div'>
         <form className='info' onSubmit={submitHandler}>

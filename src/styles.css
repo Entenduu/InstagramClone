@@ -144,4 +144,5 @@ h2.h2-headers {
 
 #like-icon {
     cursor: pointer;
+    transition: 0.4s;
 }
