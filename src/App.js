@@ -101,7 +101,6 @@ function App() {
     .then(res=>res.json())
     .then(data=>
       {
-        console.log(data)
       setPostsData(postsData.map(postData=>
         {
         if(postData.id === post.id){
