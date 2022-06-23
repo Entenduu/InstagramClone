@@ -21,7 +21,7 @@ function Login({ handleLogin, error, onSignup}) {
     // }
 
   return (
-    <div>
+    <div className='all-forms-div'>
         <form className='info' onSubmit={submitHandler}>
           <div className='form-inner'>
             <h2>Login</h2>

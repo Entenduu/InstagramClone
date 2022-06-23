@@ -12,10 +12,12 @@ function UserProfile({postsData, user}) {
 
 
   return (
-    <div>{ 
-      userPosts.map(post =>{
+    <div>
+      <h2 className='h2-headers' >Welcome, {user.name}!</h2>
+      {userPosts.map(post =>{
         return <PostCard key={post.id} post={post}/>
-    })}</div>
+      })}
+    </div>
   )
 }
 

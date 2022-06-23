@@ -33,8 +33,8 @@ function MakeAPost({onNewPost, user}) {
     console.log(formFields)
 
   return (
-    <div>
-        <form id="new-post-form" onSubmit={handleSubmit} >
+    <div className='all-forms-div' >
+        <form className='info' onSubmit={handleSubmit} >
         <div className='form-inner'>
             <h2>Make a Post</h2>
             <div className='form-group'>

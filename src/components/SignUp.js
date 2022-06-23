@@ -23,9 +23,9 @@ function SignUp({handleLogin}) {
   }
 
   return (
-    <div className='sign-up-form'>
+    <div id='sign-up-form' className='all-forms-div'>
 
-        <form onSubmit={submitHandler}>
+        <form className='info' onSubmit={submitHandler}>
           <div className='form-inner'>
             <h2>Sign Up</h2>
             <div className='form-group'>

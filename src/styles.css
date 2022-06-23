@@ -1,9 +1,9 @@
 .card-container{
     display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 input, button {
@@ -126,6 +126,18 @@ div.nav-bar{
     z-index: 2;
 }
 
-/* form#new-post-form {
-    
-} */
+div.all-forms-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+h2.h2-headers {
+    padding-top: 15px;
+    text-align: center;
+    color: #888;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
