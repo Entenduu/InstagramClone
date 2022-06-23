@@ -15,7 +15,7 @@ function Feed({user, postsData, onNewPost, onLike}) {
         
         <Switch>
             <Route path="/feed/liked" >
-                <Liked />
+                <Liked postsData={postsData} user={user} onLike={onLike}/>
             </Route>
             <Route path="/feed/profile">
                 <UserProfile postsData={postsData} user={user} onLike={onLike}/>

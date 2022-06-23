@@ -21,19 +21,22 @@ function PostCard({post, user, onLike}) {
   function handleClick(){
     console.log("liked")
     const likeIcon = document.getElementById('like-icon')
+    console.log(likeIcon)
     if(likeIcon.innerText === "♥"){
+      likeIcon.innerText = "♡"
+      likeIcon.style.color = ""
       setLikeList(likeList.filter(temp => {
         if(temp === user.name){
           return false
         }
         return true
       }))
-      likeIcon.innerText = "♡"
-      likeIcon.style.color = ""
+      
     } else {
-      setLikeList([...likeList, user.name])
+      
       likeIcon.innerText = "♥"
       likeIcon.style.color = "red"
+      setLikeList([...likeList, user.name])
     }
     onLike(post)
   }
