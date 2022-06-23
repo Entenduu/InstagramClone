@@ -1,8 +1,10 @@
-import React, {useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 
 function PostCard({post, user, onLike}) {
+
+  // console.log(post)
 
   useEffect(()=>{
     const likeIcon = document.getElementById('like-icon')
