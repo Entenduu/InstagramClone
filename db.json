@@ -6,9 +6,7 @@
       "caption": "a caption",
       "image": "/images/users/raphael/1.jpg",
       "comments": {},
-      "likes": [
-        "bop"
-      ]
+      "likes": []
     },
     {
       "id": 2,
@@ -28,7 +26,8 @@
       "image": "/images/users/raphael/3.jpg",
       "comments": {},
       "likes": [
-        "eddy"
+        "eddy",
+        "bop"
       ]
     },
     {
@@ -48,7 +47,8 @@
       "image": "/images/users/raphael/5.jpg",
       "comments": {},
       "likes": [
-        "cris"
+        "cris",
+        "bop"
       ]
     },
     {
@@ -57,7 +57,9 @@
       "caption": "Zion National Park",
       "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
       "comments": {},
-      "likes": []
+      "likes": [
+        "bop"
+      ]
     },
     {
       "id": 7,
@@ -81,9 +83,7 @@
       "caption": "Never give up",
       "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
       "comments": {},
-      "likes": [
-        "cris"
-      ]
+      "likes": []
     },
     {
       "username": "cris",
@@ -128,46 +128,6 @@
         "bop"
       ],
       "id": 15
-    },
-    {
-
-      "username": "griffin",
-      "caption": "I love sheep",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sheep%2C_Stodmarsh_6.jpg",
-      "profilePic": "",
-      "comments": {},
-      "likes": [],
-      "id": 16
-    },
-    {
-
-      "username": "cris",
-      "caption": "wendy",
-      "image": "https://i.imgur.com/qacboAZ.jpeg",
-      "profilePic": "",
-      "comments": {},
-      "likes": [],
-      "id": 17
-
-    },
-    {
-
-      "username": "cris",
-      "caption": "YO!",
-      "image": "https://i.imgur.com/GILWsYy.jpeg",
-      "profilePic": "",
-      "comments": {},
-      "likes": [],
-      "id": 18
-    },
-    {
-      "username": "cris",
-      "caption": "<3",
-      "image": "https://i.imgur.com/WKyRLrB.jpeg",
-      "profilePic": "",
-      "comments": {},
-      "likes": [],
-      "id": 19
     }
   ],
   "users": [
@@ -187,44 +147,13 @@
       "id": 3,
       "name": "bop",
       "password": "password",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "profilePic": ""
-    },
-    {
-      "name": "lil bo peep",
-      "password": "shelovessheep",
-      "profilePic": "/images/avatars/defaultIcon.png",
-      "id": 4
-    },
-    {
-      "name": "ellen",
-      "password": "ellen",
-      "profilePic": "/images/avatars/defaultIcon.png",
-      "id": 6
-    }
-  ],
-  "currentUser": {
-    "id": 2,
-    "name": "cris",
-    "password": "cashmoney",
-    "profilePic": "/images/avatars/cris.jpg"
-=======
-      "profilePic": "https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/DCTM_Penguin_UK_DK_AL674118_du57mv_lq8rif.jpg"
-=======
       "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
->>>>>>> glix
     }
   ],
   "currentUser": {
     "id": 3,
     "name": "bop",
     "password": "password",
-<<<<<<< HEAD
-    "profilePic": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
->>>>>>> glix
-=======
     "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
->>>>>>> glix
   }
 }

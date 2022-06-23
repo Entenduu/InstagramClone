@@ -127,9 +127,6 @@ function App() {
     })
   }
 
-<<<<<<< HEAD
-  console.log(userData)
-=======
   function handleChangeProfilePic(picUrl){
     let updatedUser = {...user}
     updatedUser.profilePic = picUrl
@@ -147,13 +144,10 @@ function App() {
         }
         else {return temp}
       }))
-      setUser(updatedUser)
-      history.push("/feed")
     })
     
   }
 
->>>>>>> glix
 
   return (
     
@@ -181,13 +175,8 @@ function App() {
         postsData={postsData} 
         onLogout={handleLogout} 
         onNewPost={handlePost} 
-<<<<<<< HEAD
-        userData={userData}
-        onLike={handleLike}/>
-=======
         onLike={handleLike}
         updateProfilePic={handleChangeProfilePic}/>
->>>>>>> glix
       </Route>
 
     
