@@ -25,13 +25,15 @@ function UserProfile({postsData, user, updateProfilePic}) {
   return (
     <>
     <h2 className='h2-headers'> Welcome, {user.name}!</h2>
-    <form onSubmit={handleSubmit} >
-            <div>
+    <form id="profile-pic" onSubmit={handleSubmit} >
+      <div id="inner-bar" className='form-inner'>
+            <div className='form-group'>
               <label>Update Profile Pic:</label>
-              <input onChange={handleChange} value={profilePic} type="url"/>
+              <input id="profile-pic-input" onChange={handleChange} value={profilePic} type="url"/>
             </div>
-            <input type="submit" value="Post" />
-        </form>
+            <input id="update-button" type="submit" value="Post" />
+      </div>
+    </form>
     <div>
       {userPosts.reverse()}
     </div>

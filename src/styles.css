@@ -145,3 +145,24 @@ h2.h2-headers {
     cursor: pointer;
     transition: 0.4s;
 }
+
+div#inner-bar{
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 30%;
+    z-index: 0;
+}
+
+#update-button{
+    font-size: 12;
+    padding: 9px 12px;
+}
+
+#profile-pic {
+    width: 30%;
+}
+
+#profile-pic-input {
+    width: 90%;
+}
