@@ -5,7 +5,7 @@ import PostCard from './PostCard'
 function UserProfile({postsData, user}) {
 
 
-  const userPosts = postsData.map(post => {
+  const userPosts = postsData.filter(post => {
     
     if(post.username === user.currentUsername){
       return <PostCard key={post.id} post={post}/>
