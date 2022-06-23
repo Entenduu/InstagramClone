@@ -49,8 +49,6 @@ function PostCard({post, user, onLike}) {
   return (
 
     <div>
-      <br/>
-      <br/>
       <div className='card-container'>
 
       <Card style={{ width: '28rem' }}>

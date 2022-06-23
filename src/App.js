@@ -154,7 +154,6 @@ function App() {
         onLogout={handleLogout} 
         onNewPost={handlePost} 
         onLike={handleLike}/>
-        handlePush={pushToFeed}
       </Route>
 
     

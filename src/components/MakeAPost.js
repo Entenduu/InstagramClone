@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 
-function MakeAPost({onNewPost, pushToFeed}) {
+function MakeAPost({onNewPost}) {
 
     const [formFields, setFormFields] = useState({image: '', caption: ''})
 

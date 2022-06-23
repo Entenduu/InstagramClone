@@ -20,7 +20,7 @@ function Feed({user, postsData, onNewPost, onLike, onLogout, pushToFeed}) {
                 <UserProfile postsData={postsData} user={user} onLike={onLike}/>
             </Route>
             <Route path="/feed/makeapost">
-                <MakeAPost onNewPost={onNewPost} user={user} pushToFeed={pushToFeed} />
+                <MakeAPost onNewPost={onNewPost} user={user}/>
             </Route>
             <AllPosts postsData={postsData} user={user} onLike={onLike}/>
         </Switch>
