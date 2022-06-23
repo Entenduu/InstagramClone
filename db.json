@@ -7,12 +7,7 @@
       "image": "/images/users/raphael/1.jpg",
       "profilePic": "/images/avatars/griffin.jpg",
       "comments": {},
-      "likes": [
-        "cris",
-        "bop",
-        "eddy",
-        "griffin"
-      ]
+      "likes": []
     },
     {
       "id": 2,
@@ -44,7 +39,9 @@
       "image": "/images/users/raphael/4.jpg",
       "profilePic": "/images/avatars/griffin.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "cris"
+      ]
     },
     {
       "id": 5,
@@ -53,7 +50,9 @@
       "image": "/images/users/raphael/5.jpg",
       "profilePic": "/images/avatars/user1.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "cris"
+      ]
     },
     {
       "id": 6,
@@ -90,6 +89,15 @@
       "profilePic": "/images/avatars/user4.jpg",
       "comments": {},
       "likes": []
+    },
+    {
+      "username": "cris",
+      "caption": "nyc",
+      "image": "https://i.imgur.com/MzrRNi4.jpeg",
+      "profilePic": "",
+      "comments": {},
+      "likes": [],
+      "id": 11
     }
   ],
   "users": [
@@ -125,8 +133,10 @@
     }
   ],
   "currentUser": {
-    "id": 1,
-    "name": "griffin",
-    "password": "admin123"
+
+    "id": 3,
+    "name": "bop",
+    "password": "password"
+
   }
 }
