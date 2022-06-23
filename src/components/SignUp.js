@@ -2,7 +2,7 @@ import {React, useState} from 'react'
 
 function SignUp({handleLogin, pushToFeed, user, setUser}) {
 
-  const [newUser, setNewUser] = useState({name: "", password: ""})
+  const [newUser, setNewUser] = useState({name: "", password: "", profilePic: "/images/avatars/defaultIcon.png"})
 
   const submitHandler = e => {
     e.preventDefault();

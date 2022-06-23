@@ -122,6 +122,24 @@
       "comments": {},
       "likes": [],
       "id": 15
+    },
+    {
+      "username": "lil bo peep",
+      "caption": "I love sheep",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sheep%2C_Stodmarsh_6.jpg",
+      "profilePic": "",
+      "comments": {},
+      "likes": [],
+      "id": 16
+    },
+    {
+      "username": "ellen",
+      "caption": "fruit basket",
+      "image": "https://roadrunnerflorist.com/wp-content/uploads/2018/09/holiday-fruit-basket.jpg",
+      "profilePic": "",
+      "comments": {},
+      "likes": [],
+      "id": 18
     }
   ],
   "users": [
@@ -142,6 +160,18 @@
       "name": "bop",
       "password": "password",
       "profilePic": ""
+    },
+    {
+      "name": "lil bo peep",
+      "password": "shelovessheep",
+      "profilePic": "/images/avatars/defaultIcon.png",
+      "id": 4
+    },
+    {
+      "name": "ellen",
+      "password": "ellen",
+      "profilePic": "/images/avatars/defaultIcon.png",
+      "id": 6
     }
   ],
   "currentUser": {
