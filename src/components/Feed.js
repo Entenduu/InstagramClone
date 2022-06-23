@@ -6,7 +6,7 @@ import UserProfile from './UserProfile'
 import AllPosts from './AllPosts'
 import MakeAPost from './MakeAPost'
 
-function Feed({user, postsData, onNewPost, onLike}) {
+function Feed({user, postsData, onNewPost, onLike, updateProfilePic}) {
   
   return (
     <div>
@@ -17,12 +17,16 @@ function Feed({user, postsData, onNewPost, onLike}) {
                 <Liked postsData={postsData} user={user} onLike={onLike}/>
             </Route>
             <Route path="/feed/profile">
-                <UserProfile postsData={postsData} user={user} onLike={onLike}/>
+                <UserProfile postsData={postsData}
+                user={user}
+                onLike={onLike}
+                updateProfilePic={updateProfilePic}
+                />
             </Route>
             <Route path="/feed/makeapost">
                 <MakeAPost onNewPost={onNewPost} user={user}/>
             </Route>
-            <AllPosts postsData={postsData} user={user} onLike={onLike}/>
+            <AllPosts postsData={postsData} user={user} onLike={onLike} />
         </Switch>
     </div>
   )
