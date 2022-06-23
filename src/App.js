@@ -86,7 +86,9 @@ function App() {
         body: JSON.stringify(newPost)
       })
       .then(resp => resp.json())
-      .then(setPostsData)
+      .then(data=>{
+        setPostsData([...postsData, data])
+      })
       .then( history.push("/feed"))
   
   }

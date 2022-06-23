@@ -24,11 +24,11 @@ function MakeAPost({onNewPost, pushToFeed}) {
         newPost.caption = formFields.caption
     
 
-        console.log(newPost)
+        // console.log(newPost)
         onNewPost(newPost)
     }
 
-    console.log(formFields)
+    // console.log(formFields)
 
   return (
     <div className='all-forms-div' >
