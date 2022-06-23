@@ -76,6 +76,16 @@ function App() {
   function handlePost(newPost) {
     console.log(newPost)
     newPost.username = user.name
+    fetch('http://localhost:3001/data',{
+        method: 'POST',
+        headers:{
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newPost)
+      })
+      .then(resp => resp.json())
+      .then(setPostsData)
+  
   }
 
   function handleLike(post){
