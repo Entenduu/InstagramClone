@@ -43,9 +43,7 @@ function App() {
         fetch(`http://localhost:3001/currentUser`,{
           method: 'PATCH',
           headers:{"Content-Type":"application/json"},
-          body: JSON.stringify({
-            currentUsername: temp.name
-          })
+          body: JSON.stringify(temp)
         })
         .then( history.push("/feed"))
       }

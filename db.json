@@ -102,24 +102,11 @@
       "id": 4,
       "name": "tiger",
       "password": "dog"
-    },
-    {
-      "id": 5,
-      "name": "tiger",
-      "password": "dog"
-    },
-    {
-      "name": "",
-      "password": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "password": "",
-      "id": 7
     }
   ],
   "currentUser": {
-    "currentUsername": "griffin"
+    "id": 3,
+    "name": "bop",
+    "password": "password"
   }
 }
