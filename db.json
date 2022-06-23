@@ -92,7 +92,9 @@
       "caption": "nyc",
       "image": "https://i.imgur.com/MzrRNi4.jpeg",
       "comments": {},
-      "likes": [],
+      "likes": [
+        "bop"
+      ],
       "id": 11
     },
     {
