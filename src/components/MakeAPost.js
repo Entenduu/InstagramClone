@@ -34,7 +34,8 @@ function MakeAPost({onNewPost, user}) {
 
   return (
     <div>
-        <form onSubmit={handleSubmit} >
+        <form id="new-post-form" onSubmit={handleSubmit} >
+        <div className='form-inner'>
             <h2>Make a Post</h2>
             <div className='form-group'>
               <label>Image URL:</label>
@@ -45,6 +46,7 @@ function MakeAPost({onNewPost, user}) {
               <input onChange={e => setFormFields({...formFields, caption: e.target.value})} value={formFields.caption} type="text"/>
             </div>
             <input type="submit" value="Post" />
+            </div>
         </form>
     </div>
   )
