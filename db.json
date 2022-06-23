@@ -92,9 +92,7 @@
       "caption": "nyc",
       "image": "https://i.imgur.com/MzrRNi4.jpeg",
       "comments": {},
-      "likes": [
-        "bop"
-      ],
+      "likes": [],
       "id": 11
     },
     {
@@ -136,32 +134,13 @@
       "id": 15
     },
     {
-<<<<<<< HEAD
-      "username": "griffin",
-      "caption": "I love sheep",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sheep%2C_Stodmarsh_6.jpg",
-      "profilePic": "",
-      "comments": {},
-      "likes": [],
-      "id": 16
-    },
-    {
-=======
->>>>>>> 4006ce79f67c539fd3dfeee4137d7f903f25099e
       "username": "cris",
       "caption": "wendy",
       "image": "https://i.imgur.com/qacboAZ.jpeg",
       "profilePic": "",
       "comments": {},
-<<<<<<< HEAD
-      "likes": [
-        "griffin"
-      ],
-      "id": 17
-=======
       "likes": [],
       "id": 16
->>>>>>> 4006ce79f67c539fd3dfeee4137d7f903f25099e
     },
     {
       "username": "cris",
@@ -169,15 +148,8 @@
       "image": "https://i.imgur.com/GILWsYy.jpeg",
       "profilePic": "",
       "comments": {},
-<<<<<<< HEAD
-      "likes": [
-        "griffin"
-      ],
-      "id": 18
-=======
       "likes": [],
       "id": 17
->>>>>>> 4006ce79f67c539fd3dfeee4137d7f903f25099e
     },
     {
       "username": "cris",
@@ -186,16 +158,10 @@
       "profilePic": "",
       "comments": {},
       "likes": [
-<<<<<<< HEAD
-        "griffin"
-      ],
-      "id": 19
-=======
         "cris",
         "bop"
       ],
       "id": 18
->>>>>>> 4006ce79f67c539fd3dfeee4137d7f903f25099e
     }
   ],
   "users": [
@@ -215,34 +181,13 @@
       "id": 3,
       "name": "bop",
       "password": "password",
-<<<<<<< HEAD
-      "profilePic": ""
-    },
-    {
-      "name": "lil bo peep",
-      "password": "shelovessheep",
-      "profilePic": "/images/avatars/defaultIcon.png",
-      "id": 4
-    },
-    {
-      "name": "ellen",
-      "password": "ellen",
-      "profilePic": "/images/avatars/defaultIcon.png",
-      "id": 6
-=======
       "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
->>>>>>> 4006ce79f67c539fd3dfeee4137d7f903f25099e
     }
   ],
   "currentUser": {
     "id": 3,
     "name": "bop",
     "password": "password",
-<<<<<<< HEAD
-    "profilePic": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
-
-=======
     "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
->>>>>>> 4006ce79f67c539fd3dfeee4137d7f903f25099e
   }
 }
