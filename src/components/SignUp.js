@@ -12,7 +12,13 @@ function SignUp({handleLogin, pushToFeed, user, setUser}) {
     headers: {"Content-Type":"application/json"},
     body:JSON.stringify(newUser)})
     .then(res=>res.json())
-    .then(data=>handleLogin(data))
+    .then(data=> {
+      fetch(`http://localhost:3001/currentUser`,{
+      method: 'PATCH',
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(data)
+    })
+    .then(pushToFeed)})
   }
 
   function handleOnChange(e){
@@ -23,9 +29,7 @@ function SignUp({handleLogin, pushToFeed, user, setUser}) {
   }
 
 
-  useEffect(() => {
-    setUser(newUser)
-  }, [setNewUser])
+  useEffect(() => {}, [])
   
 
   return (

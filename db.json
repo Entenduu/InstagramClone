@@ -6,7 +6,9 @@
       "caption": "a caption",
       "image": "/images/users/raphael/1.jpg",
       "comments": {},
-      "likes": []
+      "likes": [
+        "bop"
+      ]
     },
     {
       "id": 2,
@@ -26,8 +28,7 @@
       "image": "/images/users/raphael/3.jpg",
       "comments": {},
       "likes": [
-        "eddy",
-        "bop"
+        "eddy"
       ]
     },
     {
@@ -47,8 +48,7 @@
       "image": "/images/users/raphael/5.jpg",
       "comments": {},
       "likes": [
-        "cris",
-        "bop"
+        "cris"
       ]
     },
     {
@@ -57,9 +57,7 @@
       "caption": "Zion National Park",
       "image": "https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_featured_article_page/public/1460558881/the-watchman-ZION0416.jpg?itok=TdmKLhGF",
       "comments": {},
-      "likes": [
-        "bop"
-      ]
+      "likes": []
     },
     {
       "id": 7,
@@ -84,7 +82,7 @@
       "image": "http://static.materialicious.com/images/faroe-islands-from-above-stunning-drone-photography-by-chris-poplawski-o.jpg",
       "comments": {},
       "likes": [
-        "bop"
+        "cris"
       ]
     },
     {
@@ -108,9 +106,7 @@
       "caption": "not a dog",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
       "comments": {},
-      "likes": [
-        "bop"
-      ],
+      "likes": [],
       "id": 13
     },
     {
@@ -118,9 +114,7 @@
       "caption": "hi",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
       "comments": {},
-      "likes": [
-        "bop"
-      ],
+      "likes": [],
       "id": 14
     },
     {
@@ -128,19 +122,36 @@
       "caption": "cat",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
       "comments": {},
-      "likes": [
-        "bop"
-      ],
+      "likes": [],
       "id": 15
     },
     {
+<<<<<<< HEAD
+=======
+      "username": "griffin",
+      "caption": "I love sheep",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sheep%2C_Stodmarsh_6.jpg",
+      "profilePic": "",
+      "comments": {},
+      "likes": [],
+      "id": 16
+    },
+    {
+>>>>>>> af9b0cd9db12c7e9807c41b4d4ad7427aa943f2c
       "username": "cris",
       "caption": "wendy",
       "image": "https://i.imgur.com/qacboAZ.jpeg",
       "profilePic": "",
       "comments": {},
+<<<<<<< HEAD
       "likes": [],
       "id": 16
+=======
+      "likes": [
+        "griffin"
+      ],
+      "id": 17
+>>>>>>> af9b0cd9db12c7e9807c41b4d4ad7427aa943f2c
     },
     {
       "username": "cris",
@@ -148,8 +159,15 @@
       "image": "https://i.imgur.com/GILWsYy.jpeg",
       "profilePic": "",
       "comments": {},
+<<<<<<< HEAD
       "likes": [],
       "id": 17
+=======
+      "likes": [
+        "griffin"
+      ],
+      "id": 18
+>>>>>>> af9b0cd9db12c7e9807c41b4d4ad7427aa943f2c
     },
     {
       "username": "cris",
@@ -158,10 +176,16 @@
       "profilePic": "",
       "comments": {},
       "likes": [
+<<<<<<< HEAD
         "cris",
         "bop"
       ],
       "id": 18
+=======
+        "griffin"
+      ],
+      "id": 19
+>>>>>>> af9b0cd9db12c7e9807c41b4d4ad7427aa943f2c
     }
   ],
   "users": [
@@ -181,13 +205,27 @@
       "id": 3,
       "name": "bop",
       "password": "password",
+<<<<<<< HEAD
       "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
+=======
+      "profilePic": ""
+    },
+    {
+      "name": "lil bo peep",
+      "password": "shelovessheep",
+      "profilePic": "/images/avatars/defaultIcon.png",
+      "id": 4
+>>>>>>> af9b0cd9db12c7e9807c41b4d4ad7427aa943f2c
     }
   ],
   "currentUser": {
-    "id": 3,
+    "id": 5,
     "name": "bop",
     "password": "password",
+<<<<<<< HEAD
     "profilePic": "https://cdn.britannica.com/79/165579-138-27764E9E/Komodo-dragons-handful-Indonesia-Lesser-Sunda-Islands.jpg?w=800&h=450&c=crop"
+=======
+    "profilePic": ""
+>>>>>>> af9b0cd9db12c7e9807c41b4d4ad7427aa943f2c
   }
 }
