@@ -144,6 +144,7 @@ function App() {
         }
         else {return temp}
       }))
+      history.push("/feed")
     })
     
   }
